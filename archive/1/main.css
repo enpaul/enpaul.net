@@ -1,0 +1,25 @@
+body {background: #000000 url("img/background.jpg") no-repeat right top;}
+
+body, html {
+    height:100%;
+}
+
+#outerbox {
+    width:100%;
+    position:absolute; /* to place it somewhere on the screen */
+    top:50px;         /* free space at top */
+    bottom:50px;        /* makes it lock to the bottom */
+}
+
+#innerbox {
+    width:100%;
+    position:absolute;
+     
+    min-height:100% !important; /* browser fill */
+    max-height:100%
+    height:auto;                /*content fill */
+}
+
+s1 {color: white; font-size: 2.5em; text-align: left; font-family: "Eras ITC", sans-serif;}
+
+l1 {color: #848484; font-size: 1.75em; text-align: left; font-family: "BankGothic Lt BT", sans-serif;}

@@ -1,0 +1,104 @@
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+
+<head>
+
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="ENPaul Net Main Page"/>
+	<meta name="author" content="ENPaul"/>
+	<title>Main | ENPaul</title> <!-- Page Title -->
+	<link rel="shortcut icon" href="img\icon\e(b).png"> <!-- Page Icon -->
+	<link rel="stylesheet" href="css/foundation.css"/> <!-- Foundation CSS Import -->
+	<link rel="stylesheet" href="main.css"/> <!-- Custom CSS Import -->
+	<script src="js/vendor/modernizr.js"></script> <!-- No idea what this does, but its needed for Foundation -->
+	
+</head>
+
+<body>
+	
+<!-- Defines the Outerbox/Innerbox CSS blocks to force full window utilization-->
+	<div id="outerbox">
+		<div id="innerbox">
+		
+		<!-- Begin Header -->
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<img src="img/icon/e(w).png" width="64"> <!-- Header Icon -->
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<s1><a data-orbit-link="main">ENPaul</a></s1> <!-- Header main name and home link -->
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<l1><a href="https://enpaul.net/maill">EMAIL</a></l1> <!-- Header first link (webmail) -->
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<l1><a href="https://enpaul.net/drive">DRIVE</a></l1> <!-- Header second link (web storage) -->
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<l1><a href="http://plex.enpaul.net">PLEX</a></l1> <!-- Header third link (plex) -->
+		<!-- End Header-->
+		
+		<!-- Begin Orbit Slider -->
+			<ul data-orbit data-options="animation:fade; timer_speed:13000; pause_on_hover:true; resume_on_mouseout:true; slide_number:false; bullets:false; circular:true; variable_height:true; swipe;true">
+				<li data-orbit-slide="main"> <!-- First Orbit page (main) -->
+					<img src="img/homeBanner.png"> 
+				</li>
+				<li data-orbit-slide="webmail"> <!-- Second Orbit page (webmail) -->
+					<a href="https://enpaul.net/email"><img src="img/mailBanner.png"></a>
+				</li>
+				<li data-orbit-slide="drive"> <!-- Third Orbit page (web storage) -->
+					<a href="https://enpaul.net/drive"><img src="img/driveBanner.png"></a>
+				</li>
+				<li data-orbit-slide="plex"> <!-- Fourth Orbit page (plex) -->
+					<a href="http://plex.enpaul.net"><img src="img/plexBanner.png"></a>
+				</li>
+				<li data-orbit-slide="minecraft"> <!-- Fifth Orbit Page (minecraft server) -->
+					<img src="img/minecraftBanner.png">
+				</li>
+				<!-- To add more slides to Orbit, copy above <li> tabs down. Additional components are <div class="orbit-caption"> -->
+			</ul>
+		<!-- End Orbit Slider -->
+		
+		<!-- Begin Footer -->
+			<div class="row">
+				<div class="large-10 columns"></div>
+				<div class="large-2 columns">
+					<a href="https://plus.google.com/u/0/106345952902218286661/posts"><img src="img/icon/gicon.ico" width="16"></a> <!-- Google+ Profile link -->
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<a href="https://twitter.com/theenpaul"><img src="img/icon/twticon.ico" width="16"></a> <!-- Twitter Profile Link -->
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<a href="https://www.linkedin.com/in/enpaul"><img src="img/icon/inicon.ico" width="16"></a> <!-- LinkedIn Profile Link -->
+				</div>
+			<!-- End Footer -->
+			
+		<!-- Close Outerbox/Innerbox CSS full screen block -->
+		</div>
+	</div>
+ 
+<!-- JQuery compatibility -->
+	<script>
+ 		document.write('<script src=js/vendor/' +
+  		('__proto__' in {} ? 'zepto' : 'jquery') +
+  		'.js><\/script>')
+  	</script>
+<!-- JQuery JS Import -->
+	<script src="js/vendor/jquery.js"></script>
+<!-- Basic Foundation JS Import -->
+	<script src="js/foundation.min.js"></script>
+<!-- Foundation JS Initilization -->
+	<script>
+   	$(document).foundation();
+  	</script>
+<!-- JQuery JS Import (again) -->
+	<script src="js/vendor/jquery.js"></script>
+<!-- Foundation Main JS Import -->
+	<script src="js/foundation/foundation.js"></script>
+<!-- Foundation Orbit Component JS Import -->
+	<script src="js/foundation/foundation.orbit.js"></script>
+<!-- Foundation JS Document Initilization -->
+	<script>
+      $(document).foundation();
+
+      var doc = document.documentElement;
+      doc.setAttribute('data-useragent', navigator.userAgent);
+   </script>
+
+</body>
+</html>
