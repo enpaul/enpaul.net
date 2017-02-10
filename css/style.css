@@ -293,7 +293,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 50px;
     }
 
     .download-section {
@@ -338,17 +338,17 @@ ul.banner-social-buttons {
   #logo_about {
     display: none;
   }
-  #heading_large {
-    width: 256px;
+  .heading_large {
+    display: none;
   }
 }
 
 @media screen and (min-width:768px) {
+  .heading_small {
+    display: none;
+  }
   #heading_large {
     width: 512px;
-  }
-  #logo_about {
-    display: block;
   }
 }
 
