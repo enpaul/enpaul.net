@@ -335,32 +335,20 @@ ul.banner-social-buttons {
 }
 
 @media screen and (max-width:767px) {
-  .hb-sm {
+  #logo_about {
     display: none;
   }
-  .hb-xs {
-    display: block;
-  }
-  #logo_large, #logo_about {
-    display: none;
-  }
-  #logo_small {
-    display: block;
+  #heading_large {
+    width: 256px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .hb-sm {
+  #heading_large {
+    width: 512px;
+  }
+  #logo_about {
     display: block;
-  }
-  .hb-xs {
-    display: none;
-  }
-  #logo_large, #logo_about {
-    display: block;
-  }
-  #logo_small {
-    display: none;
   }
 }
 
