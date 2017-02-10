@@ -45,7 +45,7 @@ p {
 }
 
 a {
-    color: #5882A8;
+    color: #879FBB;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -269,6 +269,7 @@ a:focus {
 
 .content-section {
     padding-top: 100px;
+    text-align: center;
 }
 
 .download-section {
@@ -360,13 +361,13 @@ footer p {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #fcfcfc;
+    background: #879FBB;
     background: rgba(255,255,255,.2);
 }
 
 ::selection {
     text-shadow: none;
-    background: #fcfcfc;
+    background: #879FBB;
     background: rgba(255,255,255,.2);
 }
 
