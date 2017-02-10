@@ -193,36 +193,17 @@ a:focus {
     }
 
     .hb-sm {
-      display: none;
+      display: block;
     }
     .hb-xs {
-      display: block;
-    }
-    #logo_large, #logo_about {
       display: none;
     }
-    #logo_small {
+    #logo_large, #logo_about {
       display: block;
     }
-}
-
-.hb-sm {
-  display: block;
-}
-.hb-xs {
-  display: none;
-}
-#logo_large, #logo_about {
-  display: block;
-}
-#logo_small {
-  display: none;
-}
-#logo_large, #logo_about {
-  display: none;
-}
-#logo_small {
-  display: block;
+    #logo_small {
+      display: none;
+    }
 }
 
 .btn-circle {
@@ -381,6 +362,20 @@ ul.banner-social-buttons {
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
     }
+
+    .hb-sm {
+      display: block;
+    }
+    .hb-xs {
+      display: none;
+    }
+    #logo_large, #logo_about {
+      display: block;
+    }
+    #logo_small {
+      display: none;
+    }
+
 }
 
 footer {
