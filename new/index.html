@@ -9,12 +9,15 @@
     <meta name="description" content="ENPaul Network landing page">
     <meta name="author" content="ethannpaul@gmail.com">
 
-    <title>ENPaul DEV</title>
+    <title>ENPaul</title>
 	  <link rel="shortcut icon" href="img\e-b.png">
 
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/hexagons.min.css" rel="stylesheet" type="text/css">
+
+    <script src="js/hexagons.min.js"></script>
 
     <!--<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">-->
@@ -30,15 +33,14 @@
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
             <i class="fa fa-bars"></i>
           </button>
-          <a class="navbar-brand page-scroll" href="#page-top"><span class="light"><img src="img/e-w.png" width="32">&nbsp;&nbsp; ENPaul Network</span></a>
+          <a class="navbar-brand page-scroll" href="#page-top"><span class="light"><img src="img/e-w.png" width="32">&nbsp;&nbsp; Network</span></a>
         </div>
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
           <ul class="nav navbar-nav">
             <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
             <li class="hidden"><a href="#page-top"></a></li>
-            <li><a class="page-scroll" href="enpaul-resume.pdf">Resume</a></li>
             <li><a class="page-scroll" href="https://git.enpaul.net">Git</a></li>
-            <li><a class="page-scroll" href="#">Wiki</a></li>
+            <li><a class="page-scroll" href="https://drive.enpaul.net">Drive</a></li>
             <li><a class="page-scroll" href="https://app.plex.tv/web/app">Plex</a></li>
           </ul>
         </div>
@@ -47,7 +49,19 @@
       <!-- /.container -->
     </nav>
 
-    <div class="background-container">
+    <!-- Intro Header -->
+    <header class="intro">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h1 class="brand-heading"><img style="max-width: 512px;" src="img/logo.png"/></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <section id="about" class="container content-section">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1">
@@ -65,7 +79,8 @@
                   On this website you'll find my resume and contact information, as well as links to the other sites and services I maintain.
                 </p>
 					      <p>
-                  Feel free to contact me with questions, comments, or if you know any particularly good jokes:
+                  <a href="#"><span class="hb hb-xs"><i class="fa fa-facebook"></i></span></a>
+                  <a href="#"><span class="hb hb-sm spin-icon"><i class="fa fa-twitter"></i></span></a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
                   <li>
@@ -111,7 +126,6 @@
         		<p>Updated 2016-01-23<br>&copy;2016 ENPaul</p>
         </div>
     </footer>
-</div>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
