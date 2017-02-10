@@ -25,7 +25,7 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "Verdana",Verdana,Arial,sans-serif;
+    font-family: Montserrat,"Verdana",Verdana,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -65,7 +65,7 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #000;
 }
 
@@ -140,18 +140,25 @@ a:focus {
     }
 }
 
-.background-container {
-  display: table;
-  width: 100%;
-  height: auto;
-  padding: 100px 0;
-  color: #fff;
-  background: url(../img/background.jpg) no-repeat bottom center fixed;
-  background-color: #000;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/background.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro-minecraft{
+    background: url(../img/background-minecraft.jpg) no-repeat bottom center scroll;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .intro .intro-body .title-heading {
@@ -261,7 +268,7 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 75px;
+    padding-top: 100px;
 }
 
 .download-section {
@@ -284,7 +291,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 20px;
+        padding-top: 250px;
     }
 
     .download-section {
