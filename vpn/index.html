@@ -53,9 +53,9 @@
               </h1>
               <hr>
               <p>The ENPN Virtual Private Networking service uses an L2TP/IPSec tunnel secured with AES128/SHA256 for intranet connectivity. This protocol is natively supported by most devices and operating systemes, but may be blocked by some firewalls.</p>
-              <p>Secure intranet network access connection instructions for remote clients. Choose your client platform below:</p>
+              <p><b>NOTE:</b> Computers linked to the ENPN Omni Domain are automatically provisioned with the VPN profile and do not need to be configred.</p>
               <br>
-              <p><b>NOTE:</b> computers linked to the ENPN Omni Domain are automatically provisioned with the VPN profile and do not need to be configred.</p>
+              <p>Choose your client platform below:</p>
               <hr>
               <ul class="list-inline">
                 <li>
@@ -85,11 +85,11 @@
           <br><br>
           <p><b>NOTE:</b> For security reasons, remote connectivity from Windows clients running Windows Vista, Windows XP, or older is not supported</p>
           <br>
-          <b>Adding a connection through the Windows 10 Settings App</b>
+          <b>Adding a connection through the Windows 10 Settings App</b><br>
           <span class="documentation" style="text-align: left;">
             <ol>
               <li>From the Start Menu, open the <b>Settings</b> app</li>
-              <li>In the main <b>Settings</b> app, select <b>Network &amp; Internet</b>, then from the right hand tree select <b>VPN</b></li>
+              <li>In the main <b>Settings</b> app, select <b>Network &amp; Internet</b>, then from the right hand menu select <b>VPN</b></li>
               <li>
                 Select <b>Add a VPN connection</b> and complete the required fields with the following information:
                 <ul>
@@ -107,12 +107,12 @@
             </ol>
           </span>
           <br>
-          <b>Adding a connection through the Control Panel (Windows 8.1, 8, and 7)</b>
+          <b>Adding a connection through the Control Panel (Windows 8.1, 8, and 7)</b><br>
           <span class="documentation" style="text-align: left;">
             <ol>
               <li>From the Start Menu either click or search for <b>Control Panel</b></li>
               <li>Click <b>Network and Internet</b>, then click <b>Network and Sharing Center</b></li>
-              <li>Click <b>Set up a new connection or network<b>, select <b>Connect to a workplace</b>, then click <b>Next</b></li>
+              <li>Click <b>Set up a new connection or network</b>, select <b>Connect to a workplace</b>, then click <b>Next</b></li>
               <li>Select <b>Use my internet connection (VPN)</b></li>
               <li>
                 Set the following parameters:
@@ -139,9 +139,30 @@
           <h2>Connecting from Android</h2>
           <span style="color:white;"><i class="fa fa-android fa-4x" aria-hidden="true"></i></span>
           <br><br>
-          <p>
-            Filler
-          </p>
+          <p><b>NOTE:</b> These instructions assume Andorid version 5.0 or newer. Android version 4.1 or newer is required.</p>
+          <br>
+          <span class="documentation" style="text-align: left;">
+            <ol>
+              <li>Open the <b>Settings</b> app from either the app drawer or the pulldown menu</li>
+              <li>In the <b>Wireless &amp; Networks</b> section select <b>More</b></li>
+              <li>Select <b>VPN</b></li>
+              <li>In the upper right corner, select the <b>Plus (<i class="fa fa-plus" aria-hidden="true"></i>)</b> sign</li>
+              <li>
+                In the <b>Edit VPN profile</b> dialog set the following parameters:</b>
+                <ul>
+                  <li>Set "Name" to <b>ENPN VPN</b> or similar</li>
+                  <li>Select <b>L2TP/IPSec PSK</b> for "Type"</li>
+                  <li>Set "Server address" to <b>vpn.enpaul.net</b></li>
+                  <li>Set "IPSec pre-shared key" to the VPN key provided to you. If you have not been provided with the VPN key please email <a href="mailto:info@enpaul.net">info@enpaul.net</a></li>
+                </ul>
+              </li>
+              <li>Select <b>Save</b></li>
+              <li>Select the newly created VPN connection from the list of VPN connections to connect</li>
+              <li>When prompted enter your ENPN Omni Domain credentials</li>
+              <li>Optionally, select <b>Save account information</b></li>
+              <li>Select <b>Connection</b></li>
+            </ol>
+          </span>
         </div>
       </div>
     </section>
@@ -163,7 +184,7 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <h2>Connecting from Debian Linux</h2>
-          <span style="color:white;"><i class="fa fa-debian fa-4x" aria-hidden="true"></i></span>
+          <span style="color:white;"><i class="fa fa-linux fa-4x" aria-hidden="true"></i></span>
           <br><br>
           <p>
             Coming soon...
