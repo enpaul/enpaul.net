@@ -29,7 +29,7 @@
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
             <span class="light">MENU</span><!--<i class="fa fa-bars"></i>-->
           </button>
-          <a class="navbar-brand page-scroll" href="#page-top"><span class="light"><img src="../img/e-w.png" width="32">&nbsp;&nbsp; Virtual Private Networking</span></a>
+          <a class="navbar-brand page-scroll" href="../"><span class="light"><img src="../img/e-w.png" width="32">&nbsp;&nbsp; VPN</span></a>
         </div>
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
           <ul class="nav navbar-nav">
@@ -48,11 +48,14 @@
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
               <h1 class="brand-heading">
-                <img class="heading_large" style="max-width: 128px;" src="../img/logo.png"/>
+                <img class="heading_large" style="max-width: 512px;" src="../img/logo.png"/>
                 <img class="heading_small" style="max-width: 128px;" src="../img/e-w.png"/>
               </h1>
               <hr>
-              <p>Secure remote network access connection instructions by platform:</p>
+              <p>The ENPN Virtual Private Networking service uses an L2TP/IPSec tunnel secured with AES128/SHA256 for intranet connectivity. This protocol is natively supported by most devices and operating systemes, but may be blocked by some firewalls.</p>
+              <p>Secure intranet network access connection instructions for remote clients. Choose your client platform below:</p>
+              <br>
+              <p><b>NOTE:</b> computers linked to the ENPN Omni Domain are automatically provisioned with the VPN profile and do not need to be configred.</p>
               <hr>
               <ul class="list-inline">
                 <li>
@@ -77,12 +80,33 @@
     <section id="windows" class="container content-section text-center">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
-          <h2>Connecting from MS Windows</h2>
-          <span style="color:white;"><i class="fa fa-windows fa-2x" aria-hidden="true"></i></span>
+          <h2>Connecting from Windows</h2>
+          <span style="color:white;"><i class="fa fa-windows fa-4x" aria-hidden="true"></i></span>
           <br><br>
           <p>
-            Filler
+            Please note that all screen shots are taken from Windows 10 version 1607
           </p>
+          <span style="text-align: right;">
+            <b>Adding a connection through the Windows 10 Settings App</b>
+            <ol>
+              <li>From the start menu, open the <b>Settings</b> app</li>
+              <li>In the main <b>Settings</b> app, select <b>Network &amp; Internet</b>, then from the right hand tree select <b>VPN</b></li>
+              <li>
+                Select <b>Add a VPN connection</b> and complete the required fields with the following information:
+                <ul>
+                  <li>Set "VPN Provider" to <b>Windows (built-in)</b></li>
+                  <li>Set "Connection name" to <b>ENPN VPN</b> or similar</li>
+                  <li>Set "Server name or address" to <b>vpn.enpaul.net</b></li>
+                  <li>Set  "VPN type" to <b>L2TP/IPSec with pre-shared key</b></li>
+                  <li>Set the "Pre-shared key" field equal to the VPN key provided to you. If you have not been provided with the VPN key please email <a href="mailto:info@enpaul.net">info@enpaul.net</a></li>
+                  <li>Leave "Type of sign-in info" set to <b>User name and password</b></li>
+                  <li>Use the "Username" and "Password" fields to enter your ENPN Omni login credentials.</li>
+                  <li>Opitonally, select "Remember my sign-in info"</li>
+                </ul>
+              </li>
+              <li>Click <b>Save</b> and <b>Connect</b></li>
+            </ol>
+          </span>
         </div>
       </div>
     </section>
@@ -91,7 +115,7 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <h2>Connecting from Android 5.0+</h2>
-          <span style="color:white;"><i class="fa fa-android fa-2x" aria-hidden="true"></i></span>
+          <span style="color:white;"><i class="fa fa-android fa-4x" aria-hidden="true"></i></span>
           <br><br>
           <p>
             Filler
@@ -104,10 +128,10 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <h2>Connecting from OSX or iOS</h2>
-          <span style="color:white;"><i class="fa fa-apple fa-2x" aria-hidden="true"></i></span>
+          <span style="color:white;"><i class="fa fa-apple fa-4x" aria-hidden="true"></i></span>
           <br><br>
           <p>
-            Filler
+            Coming soon...
           </p>
         </div>
       </div>
@@ -117,10 +141,10 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <h2>Connecting from Debian Linux</h2>
-          <span style="color:white;"><i class="fa fa-debian fa-2x" aria-hidden="true"></i></span>
+          <span style="color:white;"><i class="fa fa-debian fa-4x" aria-hidden="true"></i></span>
           <br><br>
           <p>
-            Filler
+            Coming soon...
           </p>
         </div>
       </div>
@@ -128,7 +152,7 @@
 
     <footer>
         <div class="container text-center">
-        		<p style="color: #606060;"><i>&copy;2017 ENPaul - 2017-03-02</i></p>
+        		<p style="color: #606060;"><i>&copy;2017 ENPaul - 2017-03-28</i></p>
         </div>
     </footer>
 
