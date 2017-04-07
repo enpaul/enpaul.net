@@ -1,0 +1,5 @@
+job:
+    script:
+        - C:
+        - cd "C:\inetpub\wwwroot\enpaul.net"
+        - git pull
