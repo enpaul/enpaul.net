@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="ENPaul Network landing page">
-    <meta name="author" content="ethannpaul@gmail.com">
+    <meta name="author" content="enpaul@enpaul.net">
 
-    <title>ENPaul DEV</title>
+    <title>ENPaul</title>
 	  <link rel="shortcut icon" href="img\e-b.png">
 
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -19,64 +19,58 @@
 
     <script src="js/hexagons.min.js"></script>
 
-    <!--<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">-->
-
   </head>
 
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-            <i class="fa fa-bars"></i>
+            <span class="light">MENU</span><!--<i class="fa fa-bars"></i>-->
           </button>
-          <a class="navbar-brand page-scroll" href="#page-top"><span class="light"><img src="img/e-w.png" width="32">&nbsp;&nbsp; Network</span></a>
+          <a class="navbar-brand page-scroll" href="#page-top"><span class="light"><img src="img/e-w.png" width="32">&nbsp;&nbsp; Home</span></a>
         </div>
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
           <ul class="nav navbar-nav">
-            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
             <li class="hidden"><a href="#page-top"></a></li>
             <li><a class="page-scroll" href="#about">About</a></li>
-            <li><a class="page-scroll" href="https://git.enpaul.net">Git</a></li>
+            <!--<li><a class="page-scroll" href="https://gitlab.enpaul.net">Gitlab</a></li>-->
             <li><a class="page-scroll" href="https://drive.enpaul.net">Drive</a></li>
-            <li><a class="page-scroll" href="https://app.plex.tv/web/app">Plex</a></li>
+            <li><a class="page-scroll" href="https://plex.enpaul.net/">Plex</a></li>
+            <!--<li><a class="page-scroll" href="https://doc.enpaul.net">Doc</a></li>-->
           </ul>
         </div>
-        <!-- /.navbar-collapse -->
       </div>
-      <!-- /.container -->
     </nav>
 
-    <!-- Intro Header -->
     <header class="intro">
       <div class="intro-body">
         <div class="container">
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
+              <h1 class="brand-heading">
+                <img class="heading_large" style="max-width: 512px;" src="img/logo.png"/>
+                <img class="heading_small" style="max-width: 128px;" src="img/e-w.png"/>
+              </h1>
               <hr>
-              <h1 class="brand-heading"><img style="max-width: 512px;" src="img/logo.png"/></h1>
+              <p>Student - Tinkerer - Programmer - <i style="color: #808080;">(aspiring)</i> Engineer</p>
               <hr>
               <ul class="list-inline">
                 <li>
                   <a href="mailto:enpaul@enpaul.net"><span class="hb hb-sm"><i class="fa fa-envelope-o"></i></span></a>
                 </li>
                 <li>
-                  <a href="https://drive.enpaul.net/index.php/s/ffyHdMV0yljDIwr"><span class="hb hb-sm"><i class="fa fa-file-text-o"></i></span></a>
+                  <a href="https://drive.enpaul.net/index.php/s/ffyHdMV0yljDIwr/download"><span class="hb hb-sm"><i class="fa fa-file-text-o"></i></span></a>
                 </li>
-                <!--<li>
-                  <a href="#"><span class="hb hb-sm"><i class="fa fa-facebook"></i></span></a>
-                </li>-->
               	<li>
-                  <a href="https://twitter.com/theenpaul"><span class="hb hb-sm"><i class="fa fa-twitter"></i></span></a>
+                  <a target="_blank" href="https://twitter.com/theenpaul"><span class="hb hb-sm"><i class="fa fa-twitter"></i></span></a>
                 </li>
                 <li>
-                  <a href="https://plus.google.com/+EthanPaul42"><span class="hb hb-sm"><i class="fa fa-google-plus"></i></span></a>
+                  <a target="_blank" href="https://plus.google.com/+EthanPaul42"><span class="hb hb-sm"><i class="fa fa-google-plus"></i></span></a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/enpaul"><span class="hb hb-sm"><i class="fa fa-linkedin"></i></span></a>
+                  <a target="_blank" href="https://www.linkedin.com/in/enpaul"><span class="hb hb-sm"><i class="fa fa-linkedin"></i></span></a>
                 </li>
               </ul>
             </div>
@@ -85,14 +79,14 @@
       </div>
     </header>
 
-    <!-- About/Contact Section -->
     <section id="about" class="container content-section text-center">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <h2>About ENPaul</h2>
-          <img src="img\e-w.png" width="128">
+          <img id="logo_about" src="img\e-w.png" width="128">
+          <br><br>
           <p>
-            ENPaul is a Mechanical Engineering student at <a href="https://wpi.edu">Worcester Polytechnic Institute</a> in Worcester Massachusets with way too much time on his hands. He works at <a href="http://www.wpi.edu/+netops">WPI Network Operations</a> and <a href="www.solidworks.com">3DS SolidWorks</a> and runs this website when he's bored. He is SolidWorks Professional Certified, and working on getting certified in AutoDesk AutoCAD and SolidWorks Simulation.
+            ENPaul is a Mechanical Engineering student at <a target="_blank" href="https://wpi.edu">Worcester Polytechnic Institute</a> in Worcester Massachusets with way too much time on his hands. He works at <a target="_blank" href="http://www.wpi.edu/+netops">WPI Network Operations</a>, plays around with <a target="_blank" href="http://www.solidworks.com">3DS SolidWorks</a> and runs this website when he's bored.
             <br><br>
             He doesn't need donations, but asks that if you have a joke or funny story to share that you send it to him.
             <br>
@@ -101,23 +95,18 @@
       </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container text-center">
-        		<p style="color: #606060;"><i>&copy;2017 ENPaul - 2017-02-10</i></p>
+        		<p style="color: #606060;"><i>&copy;2017 ENPaul - 2017-08-16</i></p>
         </div>
     </footer>
 
-    <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
 
 </body>

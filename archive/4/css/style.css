@@ -45,7 +45,7 @@ p {
 }
 
 a {
-    color: #879FBB;
+    color: #2C7AB7;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -54,11 +54,19 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #fff;
+    color: #8D9BB6;
 }
 
 .light {
     font-weight: 400;
+}
+
+.documentation {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.documentation b {
+  color: #2C7AB7;
 }
 
 .navbar-custom {
@@ -191,6 +199,7 @@ a:focus {
     .intro .intro-body .intro-text {
         font-size: 26px;
     }
+
 }
 
 .btn-circle {
@@ -268,7 +277,7 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 50px;
+    padding-top: 5px;
     text-align: center;
 }
 
@@ -292,7 +301,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 50px;
     }
 
     .download-section {
@@ -333,6 +342,24 @@ ul.banner-social-buttons {
     margin-top: 0;
 }
 
+@media screen and (max-width:767px) {
+  #logo_about {
+    display: none;
+  }
+  .heading_large {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .heading_small {
+    display: none;
+  }
+  #heading_large {
+    width: 512px;
+  }
+}
+
 @media(max-width:1199px) {
     ul.banner-social-buttons {
         margin-top: 15px;
@@ -349,6 +376,7 @@ ul.banner-social-buttons {
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
     }
+
 }
 
 footer {
