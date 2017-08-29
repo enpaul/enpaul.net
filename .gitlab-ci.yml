@@ -1,8 +1,9 @@
 sync_website:
   script:
-    - New-Item -Path "C:\inetpub\wwwroot\" -Name enpaul.new -ItemType Directory -Force
-    - Copy-Item -Path .\* -Destination "C:\inetpub\wwwroot\enpaul.new\" -Force -Recurse
-    - Rename-Item -path .\CKCADTech -NewName CKCAD -Force
-    - Remove-Item -path "C:\inetpub\wwwroot\enpaul.net\*" -Recurse -Force
+    - New-Item -Path "C:\inetpub\wwwroot\" -Name enpaul.net.new -ItemType Directory -Force
+    - Copy-Item -Path .\* -Destination "C:\inetpub\wwwroot\enpaul.net.new\" -Force -Recurse
+    - Rename-Item -Path "C:\inetpub\wwwroot\enpaul.net" -NewName "enpaul.net.old" -Force
+    - Rename-Item -Path "C:\inetpub\wwwroot\enpaul.net.new" -NewName "enpaul.net" -Force
+    - Remove-Item -path "C:\inetpub\wwwroot\enpaul.net.old" -Recurse -Force
   tags:
-    - null
+    - web
