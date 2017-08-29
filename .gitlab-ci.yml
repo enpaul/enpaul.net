@@ -2,4 +2,4 @@ sync_website:
   script:
     - powershell .\deploy.ps1
   tags:
-    - web
+    - bad

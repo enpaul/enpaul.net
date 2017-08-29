@@ -1,8 +1,8 @@
+if (Test-Path "C:\inetpub\wwwroot\enpaul.net.new") {
+  Remove-Item -Path "C:\inetpub\wwwroot\enpaul.net.new" -Recurse -Force
+}
+
 New-Item -Path "C:\inetpub\wwwroot\" -Name "enpaul.net.new" -ItemType Directory -Force
-
-$ExcludeExt = '*.yml', '*.ps1', '*.gitignore'
-
-Get-ChildItem ".\" -Recurse -Exclude $ExcludeExtentions | Where-Object { ".\.git" -notcontains $_.DirectoryName } | Copy-Item -Destination "C:\inetpub\wwwroot\enpaul.net.new\"
 
 #Copy-Item -Path .\* -Destination "C:\inetpub\wwwroot\enpaul.net.new\" -Force -Recurse
 #Remove-Item -Path "C:\inetpub\wwwroot\enpaul.net.new\.git" -Recurse -Force
