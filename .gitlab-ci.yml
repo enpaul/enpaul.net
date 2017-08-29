@@ -1,5 +1,5 @@
 sync_website:
   script:
-    - .\deploy.ps1
+    - powershell .\deploy.ps1
   tags:
     - web
