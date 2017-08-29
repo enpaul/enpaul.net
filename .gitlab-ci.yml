@@ -1,9 +1,5 @@
 sync_website:
   script:
-    - powershell | New-Item -Path "C:\inetpub\wwwroot\" -Name enpaul.net.new -ItemType Directory -Force
-    - powershell | Copy-Item -Path .\* -Destination "C:\inetpub\wwwroot\enpaul.net.new\" -Force -Recurse
-    - powershell | Rename-Item -Path "C:\inetpub\wwwroot\enpaul.net" -NewName "enpaul.net.old" -Force
-    - powershell | Rename-Item -Path "C:\inetpub\wwwroot\enpaul.net.new" -NewName "enpaul.net" -Force
-    - powershell | Remove-Item -path "C:\inetpub\wwwroot\enpaul.net.old" -Recurse -Force
+    - .\deploy.ps1
   tags:
     - web
