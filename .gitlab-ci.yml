@@ -1,4 +1,6 @@
-sync-job:
-    script:
-        - cd "C:\inetpub\wwwroot\enpaul.net"
-        - git pull
+sync_website
+  script:
+    - cd "C:\inetpub\wwwroot\enpaul.net"
+    - git pull
+  tags:
+    - windows
