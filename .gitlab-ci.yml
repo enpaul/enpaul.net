@@ -3,4 +3,4 @@ sync_website:
     - cd "C:\inetpub\wwwroot\enpaul.net"
     - git pull
   tags:
-    - windows
+    - web
