@@ -1,4 +1,4 @@
-sync_website
+sync_website:
   script:
     - cd "C:\inetpub\wwwroot\enpaul.net"
     - git pull
