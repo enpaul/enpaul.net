@@ -1,6 +1,8 @@
 sync_website:
   script:
-    - cd "C:\inetpub\wwwroot\enpaul.net"
-    - git pull
+    - New-Item -Path "C:\inetpub\wwwroot\" -Name enpaul.new -ItemType Directory -Force
+    - Copy-Item -Path .\* -Destination "C:\inetpub\wwwroot\enpaul.new\" -Force -Recurse
+    - Rename-Item -path .\CKCADTech -NewName CKCAD -Force
+    - Remove-Item -path "C:\inetpub\wwwroot\enpaul.net\*" -Recurse -Force
   tags:
-    - web
+    - null
