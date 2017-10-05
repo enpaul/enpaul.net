@@ -42,15 +42,14 @@
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
             <span class="light">MENU</span><!--<i class="fa fa-bars"></i>-->
           </button>
-          <a class="navbar-brand page-scroll" href="#page-top"><span class="light"><img src="/img/e-w.png" width="32">&nbsp;&nbsp; Home</span></a>
+          <a class="navbar-brand page-scroll" href="/"><span class="light"><img src="/img/e-w.png" width="32">&nbsp;&nbsp; VPN</span></a>
         </div>
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
           <ul class="nav navbar-nav">
             <li class="hidden"><a href="#page-top"></a></li>
-            <li><a class="page-scroll" href="#network">Network</a></li>
-            <li><a class="page-scroll" href="#services">Services</a></li>
-            <li><a class="page-scroll" href="#projects">Projects</a></li>
-            <li><a class="page-scroll" href="#about">About</a></li>
+            <li><a class="page-scroll" href="/network">Network</a></li>
+            <li><a class="page-scroll" href="/projects">Projects</a></li>
+            <li><a class="page-scroll" href="/index.html#about">About</a></li>
           </ul>
         </div>
       </div>
@@ -62,27 +61,25 @@
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
               <h1 class="brand-heading">
-                <img class="heading_large" style="max-width: 512px;" src="img/logo.png"/>
-                <img class="heading_small" style="max-width: 128px;" src="img/e-w.png"/>
               </h1>
               <hr>
-              <p>Student - Tinkerer - Programmer - <i style="color: #808080;">(aspiring)</i> Engineer</p>
+              <p>The ENPN Virtual Private Networking service uses an L2TP/IPSec tunnel secured with AES128/SHA256 for intranet connectivity. This protocol is natively supported by most devices and operating systemes, but may be blocked by some firewalls.</p>
+              <p><b>NOTE:</b> Computers linked to the ENPN Domain are automatically provisioned with the VPN profile and do not need to be configred.</p>
+              <br>
+              <p>Choose your client platform below:</p>
               <hr>
               <ul class="list-inline">
                 <li>
-                  <a href="mailto:enpaul@enpaul.net"><span class="hb hb-sm"><i class="fa fa-envelope-o"></i></span></a>
+                  <a href="#windows" class="page-scroll"><span class="hb hb-sm"><i class="fa fa-windows" aria-hidden="true"></i></span></a>
                 </li>
                 <li>
-                  <a href="https://drive.enpaul.net/index.php/s/ffyHdMV0yljDIwr/download"><span class="hb hb-sm"><i class="fa fa-file-text-o"></i></span></a>
+                  <a href="#android" class="page-scroll"><span class="hb hb-sm"><i class="fa fa-android" aria-hidden="true"></i></span></a>
                 </li>
               	<li>
-                  <a target="_blank" href="https://twitter.com/theenpaul"><span class="hb hb-sm"><i class="fa fa-twitter"></i></span></a>
+                  <a href="#apple" class="page-scroll"><span class="hb hb-sm"><i class="fa fa-apple" aria-hidden="true"></i></span></a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://plus.google.com/+EthanPaul42"><span class="hb hb-sm"><i class="fa fa-google-plus"></i></span></a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://www.linkedin.com/in/enpaul"><span class="hb hb-sm"><i class="fa fa-linkedin"></i></span></a>
+                  <a href="#debian" class="page-scroll"><span class="hb hb-sm"><i class="fa fa-linux" aria-hidden="true"></i></span></a>
                 </li>
               </ul>
             </div>
@@ -91,97 +88,117 @@
       </div>
     </header>
 
-    <hr class="section-divider">
-
-    <section id="network" class="container content-section text-center">
+    <section id="windows" class="container content-section text-center">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
-          <h2>The ENPaul Network</h2>
-          <img id="logo_about" src="img\net.png" width="128">
+          <h2>Connecting from Windows</h2>
+          <span style="color:white;"><i class="fa fa-windows fa-4x" aria-hidden="true"></i></span>
           <br><br>
-          <p>
-            The ENPaul Network (ENPN) is a <a href="https://www.reddit.com/r/homelab/">home-lab environment</a> maintained by ENPaul for the purposes of fun, curiosity, experimentation, and support for his <a href="#projects">personal projects</a>.
-            <br><br>
-            The ENPN hosts two VMWare ESXi hypervisors, a Microsoft Active Directory Domain, federated authentication services including LDAP and RADIUS, NAS systems, and a plethora of applications and utilities.
-          </p>
-          <ul class="list-inline banner-social-buttons">
-            <li>
-              <a href="/network" class="btn btn-default btn-lg"><i class="fa fa-arrow-circle-o-right"></i> <span class="network-name"><b>Learn More</b></span></a>
-            </li>
-          </ul>
+          <p><b>NOTE:</b> For security reasons, remote connectivity from Windows clients running Windows Vista, Windows XP, or older is not supported</p>
+          <br>
+          <b>Adding a connection through the Windows 10 Settings App</b><br>
+          <span class="documentation" style="text-align: left;">
+            <ol>
+              <li>From the Start Menu, open the <b>Settings</b> app</li>
+              <li>In the main <b>Settings</b> app, select <b>Network &amp; Internet</b>, then from the right hand menu select <b>VPN</b></li>
+              <li>
+                Select <b>Add a VPN connection</b> and complete the required fields with the following information:
+                <ul>
+                  <li>Set "VPN Provider" to <b>Windows (built-in)</b></li>
+                  <li>Set "Connection name" to <b>ENPN VPN</b> or similar</li>
+                  <li>Set "Server name or address" to <b>vpn.enpaul.net</b></li>
+                  <li>Set  "VPN type" to <b>L2TP/IPSec with pre-shared key</b></li>
+                  <li>Set the "Pre-shared key" field equal to the VPN key provided to you. If you have not been provided with the VPN key please email <a href="mailto:info@enpaul.net">info@enpaul.net</a></li>
+                  <li>Leave "Type of sign-in info" set to <b>User name and password</b></li>
+                  <li>Use the "Username" and "Password" fields to enter your ENPN Domain credentials.</li>
+                  <li>Opitonally, select "Remember my sign-in info"</li>
+                </ul>
+              </li>
+              <li>Click <b>Save</b> and <b>Connect</b></li>
+            </ol>
+          </span>
+          <br>
+          <b>Adding a connection through the Control Panel (Windows 8.1, 8, and 7)</b><br>
+          <span class="documentation" style="text-align: left;">
+            <ol>
+              <li>From the Start Menu either click or search for <b>Control Panel</b></li>
+              <li>Click <b>Network and Internet</b>, then click <b>Network and Sharing Center</b></li>
+              <li>Click <b>Set up a new connection or network</b>, select <b>Connect to a workplace</b>, then click <b>Next</b></li>
+              <li>Select <b>Use my internet connection (VPN)</b></li>
+              <li>
+                Set the following parameters:
+                <ul>
+                  <li>Set "Internet Address" to <b>vpn.enpaul.net</b></li>
+                  <li>Set "Destination name" to <b>ENPN VPN</b> or similar</li>
+                  <li>Uncheck "Use a smart card"</li>
+                  <li>Check "Remember my credentials"</li>
+                  <li>Uncheck "Allow other people to use this connection"</li>
+                </ul>
+              </li>
+              <li>Click <b>Create</b></li>
+              <li>From the <b>Network and Sharing Center</b> select the newly created connection and click <b>Connect</b></li>
+              <li>When prompted, enter your ENPN Domain credentials</li>
+            </ol>
+          </span>
         </div>
       </div>
     </section>
 
-    <hr class="section-divider">
-
-    <section id="services" class="container content-section text-center">
+    <section id="android" class="container content-section text-center">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
-          <h2>Network Services</h2>
-          <img id="logo_about" src="img\gear.png" width="128">
+          <h2>Connecting from Android</h2>
+          <span style="color:white;"><i class="fa fa-android fa-4x" aria-hidden="true"></i></span>
           <br><br>
-          <p>
-            Providing useful network services is the primary goal of the ENPaul Network (ENPN). These services provide means of entertainment, data management, and security for the network users.
-            <br><br>
-            The full list of services provided by the ENPN can be found at the link below. Alternatively, use one of the other links to directly access specific service web-interfaces.
-            <br>
-          </p>
-          <ul class="list-inline banner-social-buttons">
-            <li>
-              <a href="/services" class="btn btn-default btn-lg"><i class="fa fa-arrow-circle-o-right"></i> <span class="network-name"><b>Learn More</b></span></a>
-            </li>
-            <br><br><p><i>Direct service links</i></p>
-            <li>
-              <a href="https://plex.enpaul.net" class="btn btn-default btn-lg"><i class="fa fa-ticket"></i> <span class="network-name"><b>Plex Media Server</b></span></a>
-            </li>
-            <li>
-              <a href="https://enpaul.net/vpn" class="btn btn-default btn-lg"><i class="fa fa-lock"></i> <span class="network-name"><b>VPN</b></span></a>
-            </li>
-            <li>
-              <a href="https://drive.enpaul.net" class="btn btn-default btn-lg"><i class="fa fa-cloud"></i> <span class="network-name"><b>Drive</b></span></a>
-            </li>
-          </ul>
+          <p><b>NOTE:</b> These instructions assume Andorid version 5.0 or newer. Android version 4.1 or newer is required.</p>
+          <br>
+          <span class="documentation" style="text-align: left;">
+            <ol>
+              <li>Open the <b>Settings</b> app from either the app drawer or the pulldown menu</li>
+              <li>In the <b>Wireless &amp; Networks</b> section select <b>More</b></li>
+              <li>Select <b>VPN</b></li>
+              <li>In the upper right corner, select the <b>Plus (<i class="fa fa-plus" aria-hidden="true"></i>)</b> sign</li>
+              <li>
+                In the <b>Edit VPN profile</b> dialog set the following parameters:</b>
+                <ul>
+                  <li>Set "Name" to <b>ENPN VPN</b> or similar</li>
+                  <li>Select <b>L2TP/IPSec PSK</b> for "Type"</li>
+                  <li>Set "Server address" to <b>vpn.enpaul.net</b></li>
+                  <li>Set "IPSec pre-shared key" to the VPN key provided to you. If you have not been provided with the VPN key please email <a href="mailto:info@enpaul.net">info@enpaul.net</a></li>
+                </ul>
+              </li>
+              <li>Select <b>Save</b></li>
+              <li>Select the newly created VPN connection from the list of VPN connections to connect</li>
+              <li>When prompted enter your ENPN Domain credentials</li>
+              <li>Optionally, select <b>Save account information</b></li>
+              <li>Select <b>Connection</b></li>
+            </ol>
+          </span>
         </div>
       </div>
     </section>
 
-    <hr class="section-divider">
-
-    <section id="projects" class="container content-section text-center">
+    <section id="apple" class="container content-section text-center">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
-          <h2>Personal Projects</h2>
-          <img id="logo_about" src="img\project.png" width="128">
+          <h2>Connecting from OSX or iOS</h2>
+          <span style="color:white;"><i class="fa fa-apple fa-4x" aria-hidden="true"></i></span>
           <br><br>
-          <p>
-            The underlying infrastructure of the ENPaul Network (ENPN) helps to facilitate a number of pet-projects that are constantly cycled from under development, to abandoned, to broken, and back to under development. These projects are, at best, curiosities and should be seen as such.
-            <br>
-            Enter at your own risk.
-            <br>
-          </p>
-          <ul class="list-inline banner-social-buttons">
-            <li>
-              <a href="/network" class="btn btn-default btn-lg"><i class="fa fa-arrow-circle-o-right"></i> <span class="network-name"><b>Learn More</b></span></a>
-            </li>
-          </ul>
+          <p>Coming soon...in the meantime take a look at these links:</p>
+          <p><a href="https://campus.barracuda.com/product/nextgenfirewallx/article/NGX/ConfigClient2SiteIOSPSK/">Connecting from iOS</a></p>
+          <p><a href="http://www.watchguard.com/help/docs/wsm/xtm_11/en-us/content/en-us/mvpn/ipsec/mvpn_ipsec_ios_vpn_c.html">Connecting from OSX</a></p>
         </div>
       </div>
     </section>
 
-    <hr class="section-divider">
-
-    <section id="about" class="container content-section text-center">
+    <section id="debian" class="container content-section text-center">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
-          <h2>About ENPaul</h2>
-          <img id="logo_about" src="img\e-w.png" width="128">
+          <h2>Connecting from Debian Linux</h2>
+          <span style="color:white;"><i class="fa fa-linux fa-4x" aria-hidden="true"></i></span>
           <br><br>
           <p>
-            ENPaul is a Mechanical Engineering student at <a target="_blank" href="https://wpi.edu">Worcester Polytechnic Institute</a> in Worcester Massachusets with way too much time on his hands. He works at <a target="_blank" href="http://www.wpi.edu/+netops">WPI Network Operations</a>, plays around with <a target="_blank" href="http://www.solidworks.com">3DS SolidWorks</a>, and runs this website when he's bored.
-            <br><br>
-            He doesn't want donations, but asks that if you have a joke or funny story to share that you send it to him.
-            <br>
+            Coming soon...in the meantime take a look at <a href="https://www.elastichosts.com/blog/linux-l2tpipsec-vpn-client/">this link</a>
           </p>
         </div>
       </div>
@@ -189,7 +206,7 @@
 
     <footer>
         <div class="container text-center">
-        		<p style="color: #606060;"><i>&copy;2017 ENPaul - 2017-08-25</i></p>
+        		<p style="color: #606060;"><i>&copy;2017 ENPaul - 2017-03-28</i></p>
         </div>
     </footer>
 
