@@ -15,7 +15,7 @@ Apache Deployment:
     - mkdir /var/www/html/enpaul.new
     - rm ./deploy.ps1
     - rm ./web.config
-    - rm ./.gitlab-ci-yml
+    - rm ./.gitlab-ci.yml
     - cp -r ./* /var/www/html/enpaul.new/
     - mv /var/www/html/enpaul /var/www/html/enpaul.old
     - mv /var/www/html/enpaul.new /var/www/html/enpaul
