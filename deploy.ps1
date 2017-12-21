@@ -18,6 +18,9 @@ if (Test-Path "C:\inetpub\wwwroot\enpaul.net.new\deploy.ps1") {
 if (Test-Path "C:\inetpub\wwwroot\enpaul.net.new\.gitignore") {
   Remove-Item -Path "C:\inetpub\wwwroot\enpaul.net.new\.gitignore" -Force
 }
+if (Test-Path "C:\inetpub\wwwroot\enpaul.net.new\.htaccess") {
+  Remove-Item -Path "C:\inetpub\wwwroot\enpaul.net.new\.htaccess" -Force
+}
 
 Rename-Item -Path "C:\inetpub\wwwroot\enpaul.net" -NewName "enpaul.net.old" -Force
 Rename-Item -Path "C:\inetpub\wwwroot\enpaul.net.new" -NewName "enpaul.net" -Force
