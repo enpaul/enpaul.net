@@ -1,5 +1,24 @@
-sync_website:
+stages:
+  - deploy-apache
+  - deploy-iis
+
+IIS Deployment:
+  stage: deploy-iis
   script:
     - powershell .\deploy.ps1
   tags:
-    - web
+    - iis
+
+Apache Deployment:
+  stage: deploy-apache
+  script:
+    - mkdir /var/www/enpaul.new
+    - rm ./deploy.ps1
+    - rm ./web.config
+    - rm -r ./_archive
+    - cp ./* /var/www/enpaul.new/
+    - mv -r /var/www/enpaul /var/www/enpaul.old
+    - mv -r /var/www/enpaul.new /var/www/enpaul
+    - rm -r /var/www/enpaul.old
+  tags:
+    - apache
