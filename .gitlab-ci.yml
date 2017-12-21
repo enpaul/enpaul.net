@@ -16,7 +16,7 @@ Apache Deployment:
     - rm ./deploy.ps1
     - rm ./web.config
     - rm -r ./_archive
-    - cp ./* /var/www/html/enpaul.new/
+    - cp -r ./* /var/www/html/enpaul.new/
     - mv -r /var/www/html/enpaul /var/www/html/enpaul.old
     - mv -r /var/www/html/enpaul.new /var/www/html/enpaul
     - rm -r /var/www/html/enpaul.old
