@@ -18,19 +18,21 @@
   	<meta property='og:site_name' content="ENPaul Network"/>
   	<meta property="og:url" content="https://enpaul.net/home/"/>
 
-    <title>ENPaul</title>
+    <title>ENPaul Home</title>
 
 	  <link rel="shortcut icon" href="../img/e-b.png">
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="../css/hexagons.min.css" rel="stylesheet" type="text/css">
     <link href="../css/style.css" rel="stylesheet">
+    <link href="rss.css" rel="stylesheet">
 
-    <script src="../js/jquery.js"></script>
-    <script src="../js/hexagons.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/jquery.easing.min.js"></script>
-    <script src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/hexagons.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="rss.js"></script>
 
   </head>
 
@@ -47,36 +49,12 @@
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
           <ul class="nav navbar-nav">
             <li class="hidden"><a href="#page-top"></a></li>
-            <li><a class="page-scroll" href="#weather">Weather</a></li>
-            <li><a class="page-scroll" href="#news">News</a></li>
-            <!--<li><a class="page-scroll" href="#network">Network</a></li>-->
+            <li><a class="page-scroll" href="#" onclick="showWeather();">Weather</a></li>
+            <li><a class="page-scroll" href="#" onclick="showNews();">News</a></li>
           </ul>
         </div>
       </div>
     </nav>
-
-    <!--<hr class="section-divider">
-
-    <section id="projects" class="container content-section text-center">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <h2>Personal Projects</h2>
-          <i class="fa fa-folder-open fa-5x" aria-hidden="true"></i>
-          <br><br>
-          <p>
-            The underlying infrastructure of the ENPaul Network (ENPN) helps to facilitate a number of pet-projects that are constantly cycled from under development, to abandoned, to broken, and back to under development. These projects are, at best, curiosities and should be seen as such.
-            <br>
-            Enter at your own risk.
-            <br>
-          </p>
-          <ul class="list-inline banner-social-buttons">
-            <li>
-              <a href="/network" class="btn btn-default btn-lg"><i class="fa fa-arrow-circle-o-right"></i> <span class="network-name"><b>Learn More</b></span></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>-->
 
     <hr class="section-divider">
 
@@ -90,40 +68,14 @@
       </div>
     </section>
 
-    <!--<hr class="section-divider">
-
-    <section id="network" class="container content-section text-center">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <h2>The ENPaul Network</h2>
-          <i class="fa fa-sitemap fa-5x" aria-hidden="true"></i>
-          <br><br>
-          <p>
-            The ENPaul Network (ENPN) is a <a href="https://www.reddit.com/r/homelab/">home-lab environment</a> maintained by ENPaul for the purposes of fun, curiosity, experimentation, and support for his <a href="#projects">personal projects</a>.
-            <br><br>
-            The ENPN hosts two VMWare ESXi hypervisors, a Microsoft Active Directory Domain, federated authentication services including LDAP and RADIUS, NAS systems, and a plethora of applications and utilities.
-          </p>
-          <ul class="list-inline banner-social-buttons">
-            <li>
-              <a href="/network" class="btn btn-default btn-lg"><i class="fa fa-arrow-circle-o-right"></i> <span class="network-name"><b>Learn More</b></span></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>-->
-
     <hr class="section-divider">
 
-    <section id="about" class="container content-section text-center">
+    <section id="news" class="container content-section text-center">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <h2>News</h2>
-          <!-- start sw-rss-feed code -->
-            <script type="text/javascript" src="rss.js"></script>
-            <script type="text/javascript" src="http://feed.surfing-waves.com/js/rss-feed.js"></script>
-            <!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. -->
-            <div style="text-align:right; width:90%;"><a href="http://www.surfing-waves.com/feed.htm" target="_blank" style="color:#ccc;font-size:10px">feedwidget @</a> <a href="http://www.surfing-waves.com" target="_blank" style="color:#ccc;font-size:10px">Surfing Waves</a></div>
-            <!-- end sw-rss-feed code -->
+          <script type="text/javascript" src="http://feed.surfing-waves.com/js/rss-feed.js"></script>
+          <div style="text-align:right; width:600px;"><a href="http://www.surfing-waves.com/feed.htm" target="_blank" style="color:#ccc;font-size:10px">feedwidget @</a><a href="http://www.surfing-waves.com" target="_blank" style="color:#ccc;font-size:10px">Surfing Waves</a></div>
         </div>
       </div>
     </section>

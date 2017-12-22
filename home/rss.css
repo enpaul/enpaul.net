@@ -1,3 +1,7 @@
-#feed-body {
+#news {
   width: 80%;
+}
+
+#news {
+  display: none;
 }
