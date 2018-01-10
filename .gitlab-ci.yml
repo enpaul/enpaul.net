@@ -1,12 +1,12 @@
 stages:
   - deploy-apache
 
-IIS Deployment:
-  stage: deploy-iis
-  script:
-    - powershell .\deploy.ps1
-  tags:
-    - iis
+#IIS Deployment:
+#  stage: deploy-iis
+#  script:
+#    - powershell .\deploy.ps1
+#  tags:
+#    - iis
 
 Apache Deployment:
   stage: deploy-apache
