@@ -31,7 +31,7 @@ Apache Production:
     - rm /var/www/html/build-tmp.enpaul/web.config
     - "[ -d /var/www/html/enpaul ] && mv /var/www/html/enpaul /var/www/html/enpaul.old"
     - mv /var/www/html/build-tmp.enpaul /var/www/html/enpaul
-    - rm -r /var/www/html/enpaul.old
+    - "[ -d /var/www/html/enpaul.old ] && rm -r /var/www/html/enpaul.old"
   only:
     - master
   tags:
@@ -46,7 +46,7 @@ Apache Development:
     - rm /var/www/html/build-tmp.enpaul-dev/web.config
     - "[ -d /var/www/html/enpaul-dev ] && mv /var/www/html/enpaul-dev /var/www/html/enpaul-dev.old"
     - mv /var/www/html/build-tmp.enpaul-dev /var/www/html/enpaul-dev
-    - rm -r /var/www/html/enpaul-dev.old
+    - "[ -d /var/www/html/enpaul-dev.old ] && rm -r /var/www/html/enpaul-dev.old"
   only:
     - development
   tags:
