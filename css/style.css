@@ -128,16 +128,13 @@ Responsive media queries
 	border-right: 5px solid #BE2525;
 	font-size: 24px;
 }
-.about-text p{
-	color: #444;
-}
 .abt-list li{
 	padding: 5px 0px;
 	font-size: 18px;
 	font-weight: 400;
 }
 section {
-	background-color: #606060;
+	background-color: #3a3a3a;
 	color: white;
 }
 .grid-padding{
