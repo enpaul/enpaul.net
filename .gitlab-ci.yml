@@ -29,7 +29,6 @@ Apache Production:
     - mkdir /var/www/html/build-tmp.enpaul
     - cp -r ./* /var/www/html/build-tmp.enpaul/
     - rm /var/www/html/build-tmp.enpaul/web.config
-    - rm /var/www/html/build-tmp.enpaul/.gitlab-ci.yml
     - "[ -d /var/www/html/enpaul ] && mv /var/www/html/enpaul /var/www/html/enpaul.old"
     - mv /var/www/html/build-tmp.enpaul /var/www/html/enpaul
     - rm -r /var/www/html/enpaul.old
