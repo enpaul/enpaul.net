@@ -22,7 +22,7 @@ if (Test-Path "C:\inetpub\wwwroot\tmp-build.enpaul\.htaccess") {
   Remove-Item -Path "C:\inetpub\wwwroot\tmp-build.enpaul\.htaccess" -Force
 }
 
-if (Test-Path "C:\inetpub\wwwroot\enpaul")
+if (Test-Path "C:\inetpub\wwwroot\enpaul") {
   Rename-Item -Path "C:\inetpub\wwwroot\enpaul" -NewName "enpaul.old" -Force
 }
 
