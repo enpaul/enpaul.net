@@ -12,9 +12,9 @@ if (Test-Path "C:\inetpub\wwwroot\build-tmp.enpaul-dev\.git") {
 if (Test-Path "C:\inetpub\wwwroot\build-tmp.enpaul-dev\.gitlab-ci.yml") {
   Remove-Item -Path "C:\inetpub\wwwroot\build-tmp.enpaul-dev\.gitlab-ci.yml" -Force
 }
-if (Test-Path "C:\inetpub\wwwroot\build-tmp.enpaul-dev\deploy.ps1") {
-  Remove-Item -Path "C:\inetpub\wwwroot\build-tmp.enpaul-dev\deploy.ps1" -Force
-}
+
+Remove-Item -Path "C:\inetpub\wwwroot\build-tmp.enpaul-dev\*.ps1" -Force
+
 if (Test-Path "C:\inetpub\wwwroot\build-tmp.enpaul-dev\.gitignore") {
   Remove-Item -Path "C:\inetpub\wwwroot\build-tmp.enpaul-dev\.gitignore" -Force
 }
@@ -22,8 +22,13 @@ if (Test-Path "C:\inetpub\wwwroot\build-tmp.enpaul-dev\.htaccess") {
   Remove-Item -Path "C:\inetpub\wwwroot\build-tmp.enpaul-dev\.htaccess" -Force
 }
 
-Rename-Item -Path "C:\inetpub\wwwroot\enpaul-dev" -NewName "enpaul-dev.old" -Force
+if (Test-Path "C:\inetpub\wwwroot\enpaul-dev") {
+  Rename-Item -Path "C:\inetpub\wwwroot\enpaul-dev" -NewName "enpaul-dev.old" -Force
+}
+
 Rename-Item -Path "C:\inetpub\wwwroot\build-tmp.enpaul-dev" -NewName "enpaul-dev" -Force
 
-Remove-Item -path "C:\inetpub\wwwroot\enpaul-dev.old" -Recurse -Force
+if (Test-Path "C:\inetpub\wwwroot\enpaul-dev.old") {
+  Remove-Item -path "C:\inetpub\wwwroot\enpaul-dev.old" -Recurse -Force
+}
 exit
