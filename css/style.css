@@ -1,10 +1,3 @@
-/*
-    Theme Name: Laura
-    Theme URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-*/
-
 body {
 	line-height: 1.4;
 	font-family: 'Roboto', sans-serif;
@@ -42,7 +35,7 @@ Responsive media queries
 ************************************
 ***********************************/
 .header {
-    background: url('../img/bg-banner03.jpg') no-repeat fixed;
+    background: url('../img/network.jpg') no-repeat fixed;
     background-size: cover;
     min-height: 630px;
     position: relative;
@@ -55,7 +48,6 @@ Responsive media queries
 }
 .navbar-brand {
     font-size: 36px;
-    font-family: 'Satisfy', cursive;
 }
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
     color: #fff;
@@ -77,12 +69,12 @@ Responsive media queries
 }
 
 .top-nav-collapse {
-    padding: 0; 
+    padding: 0;
     background: rgba(50,60,70, 0.9);
 }
 
 .bg-color{
-	background-color: RGBA(0, 0, 0, 0.67);
+	background-color: RGBA(0, 0, 0, 0.2);
 	min-height: 650px;
 }
 .navbar-border{
@@ -94,12 +86,14 @@ Responsive media queries
 	margin-top: 170px;
 }
 .banner-text h2, .banner-text p{
-	font-size: 40px;
 	font-weight: 400;
 	font-family: 'Questrial', sans-serif;
 }
-.banner-text h2 span{
-    font-family: 'Satisfy', cursive;
+.banner-text h2 {
+	font-size: 50px;
+}
+.banner-text p {
+	font-size: 30px;
 }
 .overlay-detail{
 	margin: 0 auto;
@@ -115,10 +109,6 @@ Responsive media queries
 	border: 1px solid #fff;
 	line-height: 40px;
 	border-radius: 50%;
-}
-.deco{
-	font-family: 'Satisfy', cursive;
-
 }
 #about{
 	background: url('../img/about-banner.jpg') no-repeat;
@@ -297,7 +287,7 @@ footer {
 		margin-right: 15px;
 }
 .type-underline, .type-underline:hover{
-	color: #767676; 
+	color: #767676;
 }
 .footer__lower {
     margin-top: 3.25em;
@@ -331,7 +321,7 @@ Responsive media queries
 	}
 }
 @media (min-width: 100px) and (max-width: 550px) {
-	
+
 	.navbar-nav > li > a {
     padding-top: 15px;
     padding-bottom: 15px;
