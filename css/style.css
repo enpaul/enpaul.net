@@ -47,7 +47,7 @@ Responsive media queries
     transition: all 0.3s;
 }
 .navbar-brand {
-    font-size: 36px;
+    font-size: 25px;
 }
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
     color: #fff;
@@ -70,7 +70,9 @@ Responsive media queries
 
 .top-nav-collapse {
     padding: 0;
-    background: rgba(50,60,70, 0.9);
+		border-bottom-style: solid;
+		border-bottom-color: #606060;
+    background: rgba(0,0,0, 1);
 }
 
 .bg-color{
@@ -111,9 +113,8 @@ Responsive media queries
 	border-radius: 50%;
 }
 #about{
-	background: url('../img/about-banner.jpg') no-repeat;
-	background-size: cover;
-	margin-bottom: -3px;
+
+/*	margin-bottom: -3px;*/
 }
 .section-padding{
 	padding: 60px 0px;
@@ -135,8 +136,9 @@ Responsive media queries
 	font-size: 18px;
 	font-weight: 400;
 }
-#portfolio{
-	background-color: #f0f1e9;
+section {
+	background-color: #606060;
+	color: white;
 }
 .grid-padding{
 	padding: 0 8px;
