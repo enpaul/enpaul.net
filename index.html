@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <!-- Web crawler and search indexing meta -->
   <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -10,6 +11,7 @@
   <meta name="keywords" content="enpaul, network, operations, networking, plex, media, server, adds, active, directory, wpi, worcester, polytechnic, institute, boston, mechanical, engineering, solidworks, home, lab, homelab, solid, works, autocad, cad, domain, windows, server"/>
   <meta name="robots" content="index,follow"/>
 
+  <!-- Facebook integration meta -->
   <meta property="og:title" content="E.N. Paul"/>
   <meta property='og:locale' content="en_US"/>
   <meta property='og:description' content="E N Paul personal landing page and Network Services website"/>
@@ -17,254 +19,468 @@
   <meta property='og:site_name' content="E.N. Paul"/>
   <meta property="og:url" content="https://enpaul.net/"/>
 
-  <title>E.N. Paul</title>
+  <!-- Twitter integration meta -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="E.N. Paul">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
 
+  <!-- Page title and favicon definition -->
+  <title>E.N. Paul</title>
   <link rel="shortcut icon" href="img\e-b.png">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto:300,400|Questrial|Satisfy">
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/hexagons.min.css">
-  <link rel="stylesheet" type="text/css" href="css/animate.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- Google Fonts loader -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- CSS references -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- JavaScript references -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/superfish.hoverIntent.js"></script>
+  <script src="js/superfish.min.js"></script>
+  <script src="js/morphext.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/sticky.js"></script>
+  <script src="js/easing.min.js"></script>
+  <script src="js/custom.js"></script>
 
 </head>
 
-<!--<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" onload="myFunction()">-->
-<body data-spy="scroll" data-target=".navbar" data-offset="60">
+<body>
+  <div id="preloader"></div>
 
-  <!-- Header section -->
-  <div class="header">
-    <div class="bg-color">
+  <section id="hero">
+    <div class="hero-container">
+      <div class="wow fadeIn">
+        <div class="hero-logo">
+          <img class="" src="img/e-w.png" alt="E. N. Paul">
+        </div>
 
-      <!-- Navigation bar and top-left icon section -->
-      <header id="main-header">
-        <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#lauraMenu">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#"><p><img src="img/e-w.png" style="max-width: 3rem;">&nbsp;E.N. Paul</p></a>
-            </div>
-            <div class="collapse navbar-collapse" id="lauraMenu">
-              <ul class="nav navbar-nav navbar-right navbar-border">
-                <li class="active"><a href="#main-header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#network">Network</a></li>
-                <!--<li><a href="#testimonial">Testimonial</a></li>-->
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-
-      <!-- Main panel -->
-      <div class="wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 wow fadeIn delay-05s">
-              <div class="banner-text">
-                <h2>Ethan N. Paul</h2>
-                <p><i>Student, tinkerer, programmer, aspiring engineer</p>
-              </div>
-            </div>
-          </div>
+        <h1>Ethan N. Paul</h1>
+        <h2>I am an engineering <span class="rotating">student, tinkerer, programmer, designer</span></h2>
+        <div class="actions">
+          <a href="#about" class="btn-get-started">About Me</a>
+          <a href="#network" class="btn-services">Network Services</a>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <section id="about" class="section-padding wow fadeIn delay-05s">
+  <header id="header">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-right">
-          <h2 class="title-text">
-            About me...
-          </h2>
-        </div>
-        <div class="col-md-6 text-left">
-          <div class="about-text">
-            <p>Hello! My name is Ethan Paul, and this is my website! I am a student at Worcester Polytechnic Institute, a part-time employee at WPI Network Operations, and a full-time tinkerer.</p>
-            <p>&nbsp;</p>
-            <p>My interests are varried and constantly chaning, but pretty consistently you can find me designing in SolidWorks, programming in Python, or crawling underneath the rust bucket I call a car! Want to know more? <a href="https://download.enpaul.net/enpaul-resume.pdf" target="_blank">Download my resume!</a></p>
-            <p>&nbsp;</p>
-            <ul class="list-inline">
-              <li>
-                <a href="mailto:enpaul@enpaul.net"><span class="hb hb-sm"><i class="fa fa-envelope-o"></i></span></a>
-              </li>
-              <li>
-                <a target="_blank" href="https://twitter.com/theenpaul"><span class="hb hb-sm"><i class="fa fa-twitter"></i></span></a>
-              </li>
-              <li>
-                <a target="_blank" href="https://plus.google.com/+EthanPaul42"><span class="hb hb-sm"><i class="fa fa-google-plus"></i></span></a>
-              </li>
-              <li>
-                <a target="_blank" href="https://www.linkedin.com/in/enpaul"><span class="hb hb-sm"><i class="fa fa-linkedin"></i></span></a>
-              </li>
+
+      <div id="logo" class="pull-left">
+        <a href="#hero"><img src="img/e-w.png" alt="ENPaul" title="" /></img></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="menu-has-children"><a href="#network">Network</a>
+            <ul>
+              <li><a href="https://gitlab.enpaul.net/">GitLab</a></li>
+              <li><a href="https://storage.enpaul.net/">Web Storage</a></li>
+              <li><a href="https://plex.enpaul.net/">Plex Media Server</a></li>
+              <li><a href="https://docs.enpaul.net/vpn/overview/">VPN</a></li>
             </ul>
-          </div>
+          </li>
+          <li><a target="_blank" href="https://docs.enpaul.net/">Docs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">About Me</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+        </div>
+      </div>
+    </div>
+    <div class="container about-container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-6 col-md-push-6 about-content">
+          <h2 class="about-title">We provide great services and ideass</h2>
+          <p class="about-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate
+          </p>
+          <p class="about-text">
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+            id est laborum
+          </p>
+          <p class="about-text">
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+            id est laborum
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="network" class="section-padding wow fadeInUp delay-05s">
-    <div class="container">
+  <section id="network">
+    <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="title text-center">Let's <span class="deco">See</span> My Work</h2>
+          <h3 class="section-title">Network Services</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">The ENPaul Network provides a number of services for entertainment, reference, security, and productivity.<br>To Learn more about the network as a whole, please <a href="https://docs.enpaul.net/">read the docs</a>.</p>
         </div>
-        <div class="col-md-12">
-          <div id="myGrid" class="grid-padding">
-            <div class="col-md-4 col-sm-4 padding-right-zero">
-              <img src="img/portfolio01.jpg" class="img-responsive">
-              <img src="img/port01.jpg" class="img-responsive">
-              <img src="img/port02.jpg" class="img-responsive">
-              <img src="img/portfolio01.jpg" class="img-responsive">
-            </div>
-            <div class="col-md-4 col-sm-4 padding-right-zero">
-              <img src="img/portfolio02.jpg" class="img-responsive">
-              <img src="img/port01.jpg" class="img-responsive">
-              <img src="img/port02.jpg" class="img-responsive">
-              <img src="img/portfolio01.jpg" class="img-responsive">
-              <img src="img/port03.jpg" class="img-responsive">
-            </div>
-            <div class="col-md-4 col-sm-4 padding-right-zero">
-              <img src="img/port01.jpg" class="img-responsive">
-              <img src="img/portfolio01.jpg" class="img-responsive">
-              <img src="img/portfolio02.jpg" class="img-responsive">
-              <img src="img/port03.jpg" class="img-responsive">
-              <img src="img/portfolio02.jpg" class="img-responsive">
-              <img src="img/port02.jpg" class="img-responsive">
-            </div>
-          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-desktop"></i></div>
+          <h4 class="service-title"><a href="">Active Directory Domain</a></h4>
+          <p class="service-description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
+          <h4 class="service-title"><a href="">VPN</a></h4>
+          <p class="service-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-paper-plane"></i></div>
+          <h4 class="service-title"><a href="">GitLab</a></h4>
+          <p class="service-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-photo"></i></div>
+          <h4 class="service-title"><a href="">Plex Media Server</a></h4>
+          <p class="service-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-road"></i></div>
+          <h4 class="service-title"><a href="">Cloud Storage</a></h4>
+          <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-shopping-bag"></i></div>
+          <h4 class="service-title"><a href="">Documentation</a></h4>
+          <p class="service-description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!--<section id="testimonial" class="section-padding wow fadeInUp">
-    <div class="container">
+  <section id="status">
+    <div class="container wow fadeInUp">
       <div class="row">
-        <h2 class="title text-center">See What Our <span class="deco">Client</span> Are Saying ?</h2>
-        <div class="test-sec">
-          <div class="col-sm-4">
-            <blockquote>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamsed commodo nibh ante facilisis bibendum dolor feugiat at. </p>
-            </blockquote>
-            <div class="carousel-info">
-              <div class="pull-left"> <span class="testimonials-name">John Doe</span> <span class="testimonials-post">CEO,  Company Inc.</span> </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <blockquote>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamsed commodo nibh ante facilisis bibendum dolor feugiat at. </p>
-            </blockquote>
-            <div class="carousel-info">
-              <div class="pull-left"> <span class="testimonials-name">John Doe</span> <span class="testimonials-post">CEO,  Company Inc.</span> </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <blockquote>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamsed commodo nibh ante facilisis bibendum dolor feugiat at. </p>
-            </blockquote>
-            <div class="carousel-info">
-              <div class="pull-left"> <span class="testimonials-name">John Doe</span> <span class="testimonials-post">CEO,  Company Inc.</span> </div>
-            </div>
-          </div>
+        <div class="col-md-8">
+          <h3 class="status-title">Service Status</h3>
+          <p class="status-text">Having trouble accessing a network service? Check the status online and let me know if there are problems!</p>
+        </div>
+        <div class="col-md-4 status-btn-container">
+          <a class="disabled status-btn" href="#">Coming Soon!</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section-padding wow fadeIn delay-05s">
-    <div class="container">
+  <!--==========================
+  Porfolio Section
+  ============================
+  <section id="portfolio">
+    <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <div class="contact-sec text-center">
-            <h2>Want To <span class="deco">Hire</span> Me?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-          </div>
+          <h3 class="section-title">Portfolio</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-1.jpg);" href="">
+            <div class="details">
+              <h4>Portfolio 1</h4>
+              <span>Alored dono par</span>
+            </div>
+          </a>
         </div>
 
-        <div class="col-md-8 col-md-push-2">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
-            <div class="form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-              <div class="validation"></div>
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-2.jpg);" href="">
+            <div class="details">
+              <h4>Portfolio 2</h4>
+              <span>Alored dono par</span>
             </div>
-            <div class="form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validation"></div>
-            </div>
+          </a>
+        </div>
 
-            <div class="text-center"><button type="submit" class="btn btn-primary btn-lg">Send Message</button></div>
-          </form>
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-3.jpg);" href="">
+            <div class="details">
+              <h4>Portfolio 3</h4>
+              <span>Alored dono par</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-4.jpg);" href="">
+            <div class="details">
+              <h4>Portfolio 4</h4>
+              <span>Alored dono par</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-5.jpg);" href="">
+            <div class="details">
+              <h4>Portfolio 5</h4>
+              <span>Alored dono par</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-6.jpg);" href="">
+            <div class="details">
+              <h4>Portfolio 6</h4>
+              <span>Alored dono par</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-7.jpg);" href="">
+            <div class="details">
+              <h4>Portfolio 7</h4>
+              <span>Alored dono par</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-8.jpg);" href="">
+            <div class="details">
+              <h4>Portfolio 8</h4>
+              <span>Alored dono par</span>
+            </div>
+          </a>
         </div>
 
       </div>
     </div>
-  </section> -->
-  
-  <footer class="footer-2 text-center-xs bg--white">
-    <div class="container">
-      <!--end row-->
+  </section>-->
+
+  <!--==========================
+  Testimonials Section
+  ============================
+  <section id="testimonials">
+    <div class="container wow fadeInUp">
       <div class="row">
-        <div class="col-md-6">
-          <div class="footer">
-            © Copyright Laura Theme. All Rights Reserved
-            <div class="credits">
-              <!--
-                All the links in the footer should remain intact.
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Laura
-              -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade.com</a>
+        <div class="col-md-12">
+          <h3 class="section-title">Testimonials</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Erdo lide, nora porodo filece, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/client-1.jpg" alt=""></div>
+            <h4>Saul Goodman</h4>
+            <span>Lawless Inc</span>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis architecto beatae. <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/client-2.jpg" alt=""></div>
+            <h4>Sara Wilsson</h4>
+            <span>Odeo Inc</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>-->
+
+  <!--==========================
+  Team Section
+  ============================
+  <section id="team">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Our Team</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/team-1.jpg" alt=""></div>
+            <h4>Walter White</h4>
+            <span>Chief Executive Officer</span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 text-right">
-          <ul class="social-list">
-            <li>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-dribbble"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-vimeo"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-            </li>
-          </ul>
+
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/team-2.jpg" alt=""></div>
+            <h4>Sarah Jhinson</h4>
+            <span>Product Manager</span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/team-3.jpg" alt=""></div>
+            <h4>William Anderson</h4>
+            <span>CTO</span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/team-4.jpg" alt=""></div>
+            <h4>Amanda Jepson</h4>
+            <span>Accountant</span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
         </div>
 
       </div>
-      <!--end row-->
+    </div>
+  </section>-->
+
+  <!--==========================
+  Contact Section
+  ============================
+  <section id="contact">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Contact Us</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 col-md-push-2">
+          <div class="info">
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p>A108 Adam Street<br>New York, NY 535022</p>
+            </div>
+
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p>info@example.com</p>
+            </div>
+
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>+1 5589 55488 55s</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-5 col-md-push-2">
+          <div class="form">
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validation"></div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>-->
+
+  <!--==========================
+  Footer
+============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+            &copy;2018 <strong>Ethan N. Paul</strong>. All Rights Reserved
+          </div>
+          <div class="copyright">
+            This page was updated on <strong>2018-02-02</strong>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery.easing.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.bxslider.min.js"></script>
-  <script src="js/wow.js"></script>
-  <script src="js/custom.js"></script>
-  <script src="contactform/contactform.js"></script>
+  <a href="#about" class="back-to-top"><span title="Back to top"><i class="fa fa-chevron-up"></i></span></a>
 
 </body>
 
