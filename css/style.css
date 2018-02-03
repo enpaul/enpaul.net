@@ -541,6 +541,24 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: white;
 }
 
+#network .service-icon-no-link {
+  float: left;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: 1px solid black;
+}
+
+#network .service-icon-no-link i {
+  color: #000;
+  font-size: 24px;
+}
+
+#network .service-item:hover .service-title a {
+  color: #1a82d8;
+}
+
 #network .service-title {
   margin-left: 80px;
   font-weight: 700;
