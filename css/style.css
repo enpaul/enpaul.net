@@ -544,6 +544,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 700;
   margin-bottom: 15px;
   text-transform: uppercase;
+  color: #111;
 }
 
 #network .service-title a {
@@ -553,6 +554,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 #network .service-description {
   margin-left: 80px;
   line-height: 24px;
+}
+
+#network .service-link {
+  margin-left: 80px;
+}
+
+#network .service-link a {
+  margin-right: 10px;
+  font-weight: bold;
 }
 
 /* status Section
@@ -861,4 +871,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   font-size: 13px;
   color: #ccc;
+}
+
+/*--------------------------------------------------------------
+# Primary button
+--------------------------------------------------------------*/
+.btn-default {
+    border: 1px solid #2C9FFF;
+    color: #2C9FFF;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #fff;
+    outline: 0;
+    color: #000;
+    background-color: #fff;
 }
