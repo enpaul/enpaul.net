@@ -8,7 +8,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background: #fff;
+  background: #000;
   color: #999;
   font-family: "Open Sans", sans-serif;
 }
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fff url("../img/preloader.svg") no-repeat center center;
+  background: #000 url("../img/preloader.svg") no-repeat center center;
 }
 
 /* Back to top button */
@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
 }
 
-#top .hero-container {
+#top .top-container {
   background: rgba(0, 0, 0, 0.3);
   display: table-cell;
   margin: 0;
@@ -182,8 +182,8 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #header {
   background: black;
-  padding: 5px 0;
-  height: 60px;
+  padding: 15px 0;
+  height: 80px;
 }
 
 #header #logo {
@@ -497,6 +497,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
+#about .about-portrait {
+  display: block;
+  margin: auto;
+  max-height: 30rem;
+}
+
 /* Network Section
 --------------------------------*/
 #network {
@@ -511,15 +517,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #network .service-icon {
   float: left;
-  background: transparent;
+  background-color: #fff;
   padding: 16px;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid white;
+  border: 1px solid black;
 }
 
 #network .service-icon i {
-  color: #fff;
+  color: #000;
   font-size: 24px;
 }
 
@@ -820,4 +826,61 @@ body.mobile-nav-active #mobile-nav-toggle {
     outline: 0;
     color: white;
     background-color: #1a82d8;
+}
+
+/*--------------------------------------------------------------
+# Custom hexagon buttons
+--------------------------------------------------------------*/
+.hb-instagram, .hb-instagram:after, .hb-instagram:before {
+  background:#8a3ab9;
+  border-color:#8a3ab9;
+  color:#fff
+}
+
+.hb-instagram-inv, .hb-instagram-inv:after, .hb-instagram-inv:before, .hb-instagram:hover, .hb-instagram:hover:after, .hb-instagram:hover:before {
+  background:0 0;
+  border-color:#8a3ab9;
+  color:#8a3ab9
+}
+
+.hb-instagram-inv:hover, .hb-instagram-inv:hover:after, .hb-instagram-inv:hover:before {
+  background:#8a3ab9;
+  border-color:#8a3ab9;
+  color:#fff;
+}
+
+.hb-email, .hb-email:after, .hb-email:before {
+  background:#0c514e;
+  border-color:#0c514e;
+  color:#fff;
+}
+
+.hb-email-inv, .hb-email-inv:after, .hb-email-inv:before, .hb-email:hover, .hb-email:hover:after, .hb-email:hover:before {
+  background:0 0;
+  border-color:#0c514e;
+  color:#0c514e;
+}
+
+.hb-email-inv:hover, .hb-email-inv:hover:after, .hb-email-inv:hover:before {
+  background:#0c514e;
+  border-color:#0c514e;
+  color:#fff
+}
+
+.hb-resume, .hb-resume:after, .hb-resume:before {
+  background:#500b25;
+  border-color:#500b25;
+  color:#fff;
+}
+
+.hb-resume-inv, .hb-resume-inv:after, .hb-resume-inv:before, .hb-resume:hover, .hb-resume:hover:after, .hb-resume:hover:before {
+  background:0 0;
+  border-color:#500b25;
+  color:#500b25;
+}
+
+.hb-resume-inv:hover, .hb-resume-inv:hover:after, .hb-resume-inv:hover:before {
+  background:#500b25;
+  border-color:#500b25;
+  color:#fff;
 }
