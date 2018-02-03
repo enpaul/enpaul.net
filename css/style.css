@@ -9,12 +9,12 @@
 --------------------------------------------------------------*/
 body {
   background: #fff;
-  color: #666666;
+  color: #999;
   font-family: "Open Sans", sans-serif;
 }
 
 a {
-  color: #03C4EB;
+  color: #1a82d8;
   transition: 0.5s;
 }
 
@@ -75,14 +75,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #03C4EB;
+  background: #1a82d8;
   color: #fff;
 }
 
 /*--------------------------------------------------------------
 # Welcome
 --------------------------------------------------------------*/
-#hero {
+#top {
   display: table;
   width: 100%;
   height: 100vh;
@@ -90,15 +90,15 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
 }
 
-#hero .hero-logo {
+#top .hero-logo {
   margin: 20px;
 }
 
-#hero .hero-logo img {
+#top .hero-logo img {
   max-width: 100%;
 }
 
-#hero .hero-container {
+#top .hero-container {
   background: rgba(0, 0, 0, 0.3);
   display: table-cell;
   margin: 0;
@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
   vertical-align: middle;
 }
 
-#hero h1 {
+#top h1 {
   margin: 30px 0 10px 0;
   font-weight: 700;
   line-height: 48px;
@@ -116,33 +116,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-  #hero h1 {
+  #top h1 {
     font-size: 28px;
     line-height: 36px;
   }
 }
 
-#hero h2 {
+#top h2 {
   color: #999;
   margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {
-  #hero h2 {
+  #top h2 {
     font-size: 24px;
     line-height: 26px;
     margin-bottom: 30px;
   }
-  #hero h2 .rotating {
+  #top h2 .rotating {
     display: block;
   }
 }
 
-#hero .rotating > .animated {
+#top .rotating > .animated {
   display: inline-block;
 }
 
-#hero .actions a {
+#top .actions a {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -155,26 +155,26 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px;
 }
 
-#hero .btn-get-started {
-  background: #03C4EB;
-  border: 2px solid #03C4EB;
+#top .btn-get-started {
+  background: #1a82d8;
+  border: 2px solid #1a82d8;
   color: #fff;
 }
 
-#hero .btn-get-started:hover {
+#top .btn-get-started:hover {
   background: none;
   border: 2px solid #fff;
   color: #fff;
 }
 
-#hero .btn-services {
+#top .btn-services {
   border: 2px solid #fff;
   color: #fff;
 }
 
-#hero .btn-services:hover {
-  background: #03C4EB;
-  border: 2px solid #03C4EB;
+#top .btn-services:hover {
+  background: #1a82d8;
+  border: 2px solid #1a82d8;
 }
 
 /*--------------------------------------------------------------
@@ -311,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
-  color: #03C4EB;
+  color: #1a82d8;
 }
 
 .nav-menu ul {
@@ -419,11 +419,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #03C4EB;
+  color: #1a82d8;
 }
 
 #mobile-nav ul .menu-item-active {
-  color: #03C4EB;
+  color: #1a82d8;
 }
 
 #mobile-body-overly {
@@ -471,7 +471,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .section-title-divider {
   width: 50px;
   height: 3px;
-  background: #03C4EB;
+  background: #1a82d8;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -479,16 +479,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Get Started Section
 --------------------------------*/
 #about {
-  background-color: #111;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/engine.jpg") fixed center center;
   padding: 80px 0;
-}
-
-#about .about-container {
-  background: url(../img/about-img.jpg) left top no-repeat;
-}
-
-#about .about-content {
-  background: #fff;
 }
 
 #about .about-title {
@@ -508,7 +500,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Network Section
 --------------------------------*/
 #network {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/circuit.jpg") fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../img/datacenter.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0 40px 0;
 }
@@ -519,11 +511,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #network .service-icon {
   float: left;
-  background: #03C4EB;
+  background: transparent;
   padding: 16px;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #03C4EB;
+  border: 1px solid white;
 }
 
 #network .service-icon i {
@@ -532,11 +524,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #network .service-item:hover .service-icon {
-  background: #fff;
+  border: 1px solid #1a82d8;
+  outline: 0;
+  color: white;
+  background-color: #1a82d8;
 }
 
 #network .service-item:hover .service-icon i {
-  color: #03C4EB;
+  color: white;
 }
 
 #network .service-title {
@@ -544,11 +539,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 700;
   margin-bottom: 15px;
   text-transform: uppercase;
-  color: #111;
+  color: white;
 }
 
 #network .service-title a {
-  color: #111;
+  color: inherit;
 }
 
 #network .service-description {
@@ -568,9 +563,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* status Section
 --------------------------------*/
 #status {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/network.jpg) fixed center center;
+  background-color: #111;
   background-size: cover;
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 #status .status-title {
@@ -604,8 +599,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #status .status-btn:hover {
-  background: #03C4EB;
-  border: 2px solid #03C4EB;
+  background: #1a82d8;
+  border: 2px solid #1a82d8;
 }
 
 /* Portfolio Section
@@ -699,7 +694,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #testimonials .profile h4 {
   font-weight: 700;
-  color: #03C4EB;
+  color: #1a82d8;
   margin-bottom: 5px;
 }
 
@@ -774,7 +769,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .social a:hover {
-  color: #03C4EB;
+  color: #1a82d8;
 }
 
 #team .member .social i {
@@ -786,7 +781,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #contact {
   background: #111;
-  padding: 20px 0;
+  padding: 30px 0;
   text-align: center;
 }
 
@@ -794,7 +789,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #111;
+  background: black;
   padding: 30px 0;
   color: #fff;
 }
@@ -814,15 +809,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Primary button
 --------------------------------------------------------------*/
 .btn-default {
-    border: 1px solid #2C9FFF;
-    color: #2C9FFF;
+    border: 1px solid white;
+    color: white;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #fff;
+    border: 1px solid #1a82d8;
     outline: 0;
-    color: #000;
-    background-color: #fff;
+    color: white;
+    background-color: #1a82d8;
 }
