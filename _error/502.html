@@ -1,64 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
+  <!-- Web crawler and search indexing meta -->
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="author" content="enpaul@enpaul.net"/>
+  <meta name="robots" content="noindex,nofollow"/>
 
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="author" content="enpaul@enpaul.net"/>
-    <meta name="robots" content="nofollow"/>
+  <!-- Page title and favicon definition -->
+  <title>ERROR 502</title>
+  <link rel="shortcut icon" href="img/e-b.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/e-b.png">
+  <link rel="icon" type="image/png" href="img/e-b.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="img/e-b.png" sizes="16x16">
 
-    <title>Error 502</title>
+  <!-- CSS references -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
-	  <link rel="shortcut icon" href="../img/e-b.png">
-    <link href="../css/bootstrap.css" rel="stylesheet">
-    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/style.css" rel="stylesheet">
+</head>
 
-    <script src="../js/jquery.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+<body>
+  <section id="top">
+    <div class="top-container">
+      <div class="wow fadeIn">
 
-  </head>
-
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand page-scroll" href="#page-top"><span class="light"><img src="../img/e-w.png" width="32"></span></a>
-        </div>
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-          <ul class="nav navbar-nav">
-            <li class="hidden"><a href="#page-top"></a></li>
-            <li><a class="page-scroll" href="/">Home</a></li>
-            <!--<li><a class="page-scroll" href="#projects">Projects</a></li>-->
-            <li><a class="page-scroll" href="/services/">Services</a></li>
-            <!--<li><a class="page-scroll" href="#network">Network</a></li>-->
-            <li><a class="page-scroll" href="/#about">About</a></li>
-          </ul>
+        <h1>HTTP 502: Bad Gateway</h1>
+        <i class="error-icon fa fa-exclamation-triangle fa-5x"></i>
+        <h2>Server recieved an invalid response from upstream server while acting as a gateway or proxy.</h2>
+        <div class="actions">
+          <a href="https://enpaul.net/" class="btn-header"><i class="fa fa-home"></i>&nbsp;Home</a>
+          <a href="#" class="btn-header" onclick="window.history.back();"><i class="fa fa-undo"></i>&nbsp;Back</a>
+          <br>
+          <a href="https://httpstatuses.com/502" target="_blank" class="btn-header"><i class="fa fa-info-circle"></i>&nbsp;Details</a>
         </div>
       </div>
-    </nav>
+    </div>
+  </section>
 
-    <header class="intro">
-      <div class="intro-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <h1>Error 502: Bad Gateway</h1>
-              <p>The server encountered an unknown error from an upstream server while acting as a reverse proxy or gateway. Please <a href="mailto:admin@enpaul.net">contact an administrator</a>.</p>
-            </div>
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+            &copy;2018 <strong>Ethan N. Paul</strong>. All Rights Reserved
+          </div>
+          <div class="copyright">
+            <a href="https://gitlab.enpaul.net/enpaul/ENPaulNetHome"><strong><i class="fa fa-gitlab fa-lg"></i>&nbsp;&nbsp;</strong></a><a href="https://gitlab.enpaul.net/enpaul/ENPaulNetHome/commits/master"><img alt="pipeline status" src="https://gitlab.enpaul.net/enpaul/ENPaulNetHome/badges/master/pipeline.svg" /></a>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </footer>
 
-    <footer>
-        <div class="container text-center">
-        		<p style="color: #606060;"><i>&copy;2017 E.N.Paul</i></p>
-        </div>
-    </footer>
+</body>
 
-  </body>
 </html>

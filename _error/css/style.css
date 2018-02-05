@@ -113,11 +113,12 @@ h1, h2, h3, h4, h5, h6 {
 #top h2 {
   color: #999;
   margin-bottom: 50px;
+  font-size: 25px;
 }
 
 @media (max-width: 768px) {
   #top h2 {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 26px;
     margin-bottom: 30px;
   }
@@ -147,6 +148,12 @@ h1, h2, h3, h4, h5, h6 {
 #top .btn-header:hover {
   background: #1a82d8;
   border: 2px solid #1a82de;
+}
+
+#top .error-icon {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
 }
 
 /*--------------------------------------------------------------
