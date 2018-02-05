@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #top .btn-services:hover {
   background: #1a82d8;
-  border: 2px solid #1a82d8;
+  border: 2px solid #1a82de;
 }
 
 /*--------------------------------------------------------------
@@ -553,10 +553,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #network .service-icon-no-link i {
   color: #000;
   font-size: 24px;
-}
-
-#network .service-item:hover .service-title a {
-  color: #003777;
 }
 
 #network .service-title {
