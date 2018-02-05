@@ -471,7 +471,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .section-title-divider {
   width: 50px;
   height: 3px;
-  background: #1a82d8;
+  background: #003777;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -531,10 +531,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #network .service-item:hover .service-icon {
-  border: 1px solid #1a82d8;
+  border: 1px solid #003777;
   outline: 0;
   color: white;
-  background-color: #1a82d8;
+  background-color: #003777;
 }
 
 #network .service-item:hover .service-icon i {
@@ -556,7 +556,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #network .service-item:hover .service-title a {
-  color: #1a82d8;
+  color: #003777;
 }
 
 #network .service-title {
@@ -841,10 +841,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #1a82d8;
+    border: 1px solid #003777;
     outline: 0;
     color: white;
-    background-color: #1a82d8;
+    background-color: #003777;
 }
 
 /*--------------------------------------------------------------
