@@ -275,13 +275,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Nav Meu Container */
-#nav-menu-container {
+#nav-menu-container-left {
+  float: left;
+}
+
+#nav-menu-container-left p {
+  padding: 5px 5px;
+  margin-bottom: 0;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  #nav-menu-container-left {
+    display: none;
+  }
+}
+
+/* Nav Meu Container */
+#nav-menu-container-right {
   float: right;
   margin: 5px 0;
 }
 
 @media (max-width: 768px) {
-  #nav-menu-container {
+  #nav-menu-container-right {
     display: none;
   }
 }
