@@ -28,6 +28,7 @@ Apache Production:
     - "[ -d /var/www/html/build-tmp.enpaul ] && rm -r /var/www/html/build-tmp.enpaul"
     - mkdir /var/www/html/build-tmp.enpaul
     - cp -r ./* /var/www/html/build-tmp.enpaul/
+    - cp ./.htaccess /var/www/html/build-tmp.enpaul/
     - rm /var/www/html/build-tmp.enpaul/web.config
     - "[ -d /var/www/html/enpaul ] && mv /var/www/html/enpaul /var/www/html/enpaul.old"
     - mv /var/www/html/build-tmp.enpaul /var/www/html/enpaul
@@ -43,6 +44,7 @@ Apache Development:
     - "[ -d /var/www/html/build-tmp.enpaul-dev ] && rm -r /var/www/html/build-tmp.enpaul-dev"
     - mkdir /var/www/html/build-tmp.enpaul-dev
     - cp -r ./* /var/www/html/build-tmp.enpaul-dev/
+    - cp ./.htaccess /var/www/html/build-tmp.enpaul/
     - rm /var/www/html/build-tmp.enpaul-dev/web.config
     - "[ -d /var/www/html/enpaul-dev ] && mv /var/www/html/enpaul-dev /var/www/html/enpaul-dev.old"
     - mv /var/www/html/build-tmp.enpaul-dev /var/www/html/enpaul-dev
