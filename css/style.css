@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #1a82d8;
+  background: #003777;
   color: #fff;
 }
 
@@ -155,24 +155,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px;
 }
 
-#top .btn-get-started {
-  background: #1a82d8;
-  border: 2px solid #1a82d8;
-  color: #fff;
-}
-
-#top .btn-get-started:hover {
-  background: none;
+#top .btn-header {
   border: 2px solid #fff;
   color: #fff;
 }
 
-#top .btn-services {
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-#top .btn-services:hover {
+#top .btn-header:hover {
   background: #1a82d8;
   border: 2px solid #1a82de;
 }
