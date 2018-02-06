@@ -275,35 +275,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Nav Meu Container */
-#nav-menu-container-left {
+#contact-menu {
   float: left;
 }
 
-#nav-menu-container-left p {
-  padding: 5px 5px;
-  margin-bottom: 0;
-  text-decoration: none;
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  outline: none;
+#contact-menu span.hb {
+  /*font-size: 10px;*/
 }
 
 @media (max-width: 768px) {
-  #nav-menu-container-left {
-    display: none;
+  #contact-menu {
+    float: none;
+    text-align: center;
   }
 }
 
 /* Nav Meu Container */
-#nav-menu-container-right {
+#nav-menu-container {
   float: right;
   margin: 5px 0;
 }
 
 @media (max-width: 768px) {
-  #nav-menu-container-right {
+  #nav-menu-container {
     display: none;
   }
 }
