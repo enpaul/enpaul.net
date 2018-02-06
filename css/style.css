@@ -670,25 +670,34 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #project .project-item .details h4 {
-  font-size: 16px;
+  font-size: 18px;
   transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
   -webkit-transform: translate3d(0, -15px, 0);
   transform: translate3d(0, -15px, 0);
   font-weight: 700;
-  color: #333333;
+  color: #000;
 }
 
 #project .project-item .details span {
   display: block;
-  color: #666666;
-  font-size: 13px;
+  color: #000;
+  font-size: 15px;
   transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
   -webkit-transform: translate3d(0, 15px, 0);
   transform: translate3d(0, 15px, 0);
+}
+
+@media (max-width: 768px) {
+  #project .project-item .details h4 {
+    font-size: 25px;
+  }
+  #project .project-item .details span {
+    font-size: 20px;
+  }
 }
 
 #project .project-item:hover .details {
