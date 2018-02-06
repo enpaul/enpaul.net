@@ -110,3 +110,27 @@ jQuery(document).ready(function( $ ) {
   });
 
 });
+
+function getLatestInstagram() {
+  var accessToken = "6776938228.41033a7.2c2b19a29d184bc89d6e5b2490f56715";
+  var clientID = " 41033a7c7d324db08a2fa121ad0bd05b";
+  var redirectURI = "https://enpaul.net/";
+  var userID = "6776938228";
+
+  var urlAPI = "https://api.instagram.com/v1/users/" + userID + "/media/recent/?access_token=" + accessToken + "&count=1";
+
+  jQuery.ajax({
+    url: urlAPI,
+    type: "GET",
+    contentType: 'application/json; charset=utf-8',
+    success: function(jsonOut) {
+      var dataOut = JSON.parse($jsonOut);
+      var urlIMG = dataOut['data']['images']['low_resolution']['url'];
+      $('#project-item-instagram').css("background-image", "url(" + urlIMG + ")");
+    },
+    error : function(jqXHR, textStatus, errorThrown) {
+      $('#project-item-instagram').css("background-image", "url(../img/projects/instagram_default.jpg)");
+    },
+    timeout: 120000,
+  });
+}
