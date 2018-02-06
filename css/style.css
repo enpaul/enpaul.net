@@ -171,7 +171,8 @@ h1, h2, h3, h4, h5, h6 {
 #header {
   background: black;
   padding: 15px 0;
-  height: 80px;
+  height: 55px;
+  margin-top: -80px;
 }
 
 #header #logo {
