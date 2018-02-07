@@ -657,6 +657,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: table;
   overflow: hidden;
   margin-bottom: 30px;
+  outline-style: solid;
+  outline-color: white;
+  outline-width: 2px;
 }
 
 #project .project-item .details {
@@ -691,7 +694,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   transform: translate3d(0, 15px, 0);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
+  #project .project-item {
+    outline-style: none;
+  }
   #project .project-item .details h4 {
     font-size: 25px;
   }
