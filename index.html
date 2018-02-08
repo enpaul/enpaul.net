@@ -52,12 +52,12 @@
   <script type="text/javascript" src="js/easing.min.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
 
-  <noscript><style>#preloader {display: none;}</style></noscript>
+  <noscript><style>.nojs {display: none;}</style></noscript>
 
 </head>
 
 <body>
-  <div id="preloader"></div>
+  <div id="preloader" class="nojs"></div>
 
   <section id="top">
     <div class="top-container">
@@ -67,7 +67,7 @@
         </div>
 
         <h1>Ethan N. Paul</h1>
-        <h2>Engineer, tinkerer, and <span class="rotating">student, designer, mechanic, handyman, hiker, developer, traveler, kayaker, swimmer, programmer, debugger</span></h2>
+        <h2>Engineer, tinkerer, and <span class="nojs rotating">student, designer, mechanic, handyman, hiker, developer, traveler, kayaker, swimmer, programmer, debugger</span><noscript>student</noscript></h2>
         <div class="actions">
           <a href="#about" class="btn-header">About</a>
           <a href="#network" class="btn-header">Network</a>
@@ -89,6 +89,7 @@
           <li><a href="#contact">Contact</a></li>
           <li><a href="#network">Network</a>
           <li><a target="_blank" href="https://docs.enpaul.net/">Docs</a></li>
+          <li><noscript><a href="/js/warn/" title="Client Javascript Disabled" style="color: orange;"><i class="fa fa-lg fa-exclamation-circle"></i></a></noscript></li>
         </ul>
       </nav>
     </div>
@@ -234,6 +235,7 @@
         <div class="col-md-12">
           <div class="copyright">
             &copy;2018 <strong>Ethan N. Paul</strong>. All Rights Reserved
+            &nbsp;<noscript><a href="/js/warn/" title="Client Javascript Disabled" style="color: orange;"><i class="fa fa-lg fa-exclamation-circle"></i></a></noscript>
           </div>
           <div class="copyright">
             <a href="https://gitlab.enpaul.net/enpaul/ENPaulNetHome"><strong><i class="fa fa-gitlab fa-lg"></i>&nbsp;&nbsp;</strong></a><a href="https://gitlab.enpaul.net/enpaul/ENPaulNetHome/commits/master"><img alt="pipeline status" src="https://gitlab.enpaul.net/enpaul/ENPaulNetHome/badges/master/pipeline.svg" /></a>
