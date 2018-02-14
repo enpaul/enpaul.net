@@ -90,12 +90,18 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
 }
 
-#top .hero-logo {
+#top .top-logo {
   margin: 20px;
 }
 
-#top .hero-logo img {
+#top .top-logo img {
   max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  #top .top-logo img {
+    max-width: 50%;
+  }
 }
 
 #top .top-container {
@@ -172,6 +178,12 @@ h1, h2, h3, h4, h5, h6 {
   background: black;
   padding: 15px 0;
   height: 80px;
+}
+
+#header.homepage {
+  padding: 10px 0;
+  height: 40px;
+  margin-top: -60px;
 }
 
 #header #logo {
@@ -275,9 +287,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Nav Meu Container */
+#contact-menu {
+  float: left;
+}
+
+#contact-menu span.hb {
+  /*font-size: 10px;*/
+}
+
+@media (max-width: 768px) {
+  #contact-menu {
+    float: none;
+    text-align: center;
+  }
+}
+
+/* Nav Meu Container */
 #nav-menu-container {
   float: right;
-  margin: 5px 0;
+  /*margin: 5px 0;*/
 }
 
 @media (max-width: 768px) {
@@ -467,7 +495,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Get Started Section
 --------------------------------*/
 #about {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/engine.jpg") fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/watch.jpg") fixed center center;
   padding: 80px 0;
 }
 
@@ -614,12 +642,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Portfolio Section
 --------------------------------*/
-#portfolio {
-  background: #fff;
+#project {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/engine.jpg") fixed center center;;
   padding: 80px 0;
 }
 
-#portfolio .portfolio-item {
+#project .project-item {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -629,9 +657,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: table;
   overflow: hidden;
   margin-bottom: 30px;
+  outline-style: solid;
+  outline-color: white;
+  outline-width: 2px;
 }
 
-#portfolio .portfolio-item .details {
+#project .project-item .details {
   height: 260px;
   background: #fff;
   display: table-cell;
@@ -641,21 +672,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
 }
 
-#portfolio .portfolio-item .details h4 {
-  font-size: 16px;
+#project .project-item .details h4 {
+  font-size: 18px;
   transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
   -webkit-transform: translate3d(0, -15px, 0);
   transform: translate3d(0, -15px, 0);
   font-weight: 700;
-  color: #333333;
+  color: #000;
 }
 
-#portfolio .portfolio-item .details span {
+#project .project-item .details span {
   display: block;
-  color: #666666;
-  font-size: 13px;
+  color: #000;
+  font-size: 15px;
   transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
@@ -663,32 +694,44 @@ body.mobile-nav-active #mobile-nav-toggle {
   transform: translate3d(0, 15px, 0);
 }
 
-#portfolio .portfolio-item:hover .details {
+@media (max-width: 990px) {
+  #project .project-item {
+    outline-style: none;
+  }
+  #project .project-item .details h4 {
+    font-size: 25px;
+  }
+  #project .project-item .details span {
+    font-size: 20px;
+  }
+}
+
+#project .project-item:hover .details {
   opacity: 0.8;
 }
 
-#portfolio .portfolio-item:hover .details h4 {
+#project .project-item:hover .details h4 {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-#portfolio .portfolio-item:hover .details span {
+#project .project-item:hover .details span {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
 /* Testimonials Section
 --------------------------------*/
-#testimonials {
+#locations {
   background: #f6f6f6;
   padding: 80px 0;
 }
 
-#testimonials .profile {
+#locations .profile {
   text-align: center;
 }
 
-#testimonials .profile .pic {
+#locations .profile .pic {
   border-radius: 50%;
   border: 6px solid #fff;
   margin-bottom: 15px;
@@ -697,21 +740,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 260px;
 }
 
-#testimonials .profile .pic img {
+#locations .profile .pic img {
   max-width: 100%;
 }
 
-#testimonials .profile h4 {
+#locations .profile h4 {
   font-weight: 700;
   color: #1a82d8;
   margin-bottom: 5px;
 }
 
-#testimonials .profile span {
+#locations .profile span {
   color: #333333;
 }
 
-#testimonials .quote {
+#locations .quote {
   position: relative;
   background: #fff;
   padding: 60px;
@@ -721,7 +764,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 5px;
 }
 
-#testimonials .quote b {
+#locations .quote b {
   display: inline-block;
   font-size: 22px;
   left: -9px;
@@ -729,7 +772,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: -8px;
 }
 
-#testimonials .quote small {
+#locations .quote small {
   display: inline-block;
   right: -9px;
   position: relative;
@@ -803,8 +846,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
+#footer.homepage {
+  background: black;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
 #footer .copyright {
   text-align: center;
+  padding-bottom: 5px;
 }
 
 #footer .credits {
