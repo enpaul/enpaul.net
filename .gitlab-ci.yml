@@ -1,26 +1,25 @@
 stages:
   - deploy-release-apache
   - deploy-dev-apache
-  - deploy-release-iis
   - deploy-dev-iis
 
-IIS Production:
-  stage: deploy-release-iis
-  script:
-    - powershell .\.ci-release.ps1
-  only:
-    - master
-  tags:
-    - release-iis
-
-IIS Development:
-  stage: deploy-dev-iis
-  script:
-    - powershell .\.ci-dev.ps1
-  only:
-    - development
-  tags:
-    - dev-iis
+#IIS Production:
+#  stage: deploy-release-iis
+#  script:
+#    - powershell .\.ci-release.ps1
+#  only:
+#    - master
+#  tags:
+#    - release-iis
+#
+#IIS Development:
+#  stage: deploy-dev-iis
+#  script:
+#    - powershell .\.ci-dev.ps1
+#  only:
+#    - development
+#  tags:
+#    - dev-iis
 
 Apache Production:
   stage: deploy-release-apache
