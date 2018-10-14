@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
   width: 100%;
   height: 100vh;
-  background: url(https://static.foundatio.nl/backgrounds/cl-network.jpg) top center fixed;
+  background: url(https://cdn.enp.one/img/backgrounds/cl-network.jpg) top center fixed;
   background-size: cover;
 }
 
@@ -495,7 +495,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Get Started Section
 --------------------------------*/
 #about {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://static.foundatio.nl/backgrounds/bw-watch.jpg") fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://cdn.enp.one/img/backgrounds/bw-watch.jpg") fixed center center;
   padding: 80px 0;
 }
 
@@ -522,7 +522,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Network Section
 --------------------------------*/
 #network {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://static.foundatio.nl/backgrounds/bw-datacenter.jpg") fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://cdn.enp.one/img/backgrounds/bw-datacenter.jpg") fixed center center;
   background-size: cover;
   padding: 80px 0 60px 0;
 }
@@ -643,7 +643,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Portfolio Section
 --------------------------------*/
 #project {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://static.foundatio.nl/backgrounds/bw-engine.jpg") fixed center center;;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://cdn.enp.one/img/backgrounds/bw-engine.jpg") fixed center center;;
   padding: 80px 0;
 }
 
