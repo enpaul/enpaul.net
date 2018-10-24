@@ -922,8 +922,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .hb-resume, .hb-resume:after, .hb-resume:before {
-  background:#003777;
-  border-color:#003777;
+  background:red;
+  border-color:red;
   color:#fff;
 }
 
