@@ -2,7 +2,7 @@
 
 This is my personal front-end landing page hosted on my Digital Ocean Droplet, at https://enpaul.net.
 
-Being a static site it should be hostable nearly anywhere, but I have personally verified that it works under **Apache 2.4** and **IIS 10**
+Being a static site it should be hostable nearly anywhere, but I have personally verified that it works under **Nginx**, **Apache**, and **IIS 10**
 
 The `_archive` directory has all the previous iterations of this website, dating back even before it was in source control. The `_archive` directory could be considered documentation of my indecisive nature.
 
