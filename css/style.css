@@ -9,7 +9,7 @@
 --------------------------------------------------------------*/
 body {
   background: #000;
-  color: #999;
+  color: #b5b5b5;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -516,7 +516,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-portrait {
   display: block;
   margin: auto;
-  max-height: 30rem;
+  max-height: 35rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #111;
+  border-width: 10px;
 }
 
 /* Network Section
