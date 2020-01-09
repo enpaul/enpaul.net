@@ -1,7 +1,12 @@
+# Allow all bots
 User-agent: *
+
+# Disallow access to non-content directories
 Disallow: /_archive
 Disallow: /_error
 Disallow: /css
 Disallow: /fonts
 Disallow: /img
 Disallow: /js
+
+Sitemap: https://enpaul.net/sitemap.xml
