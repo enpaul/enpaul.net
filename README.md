@@ -4,13 +4,11 @@
 
 _Proud supporter of the [Electronic Frontier Foundation](https://www.eff.org/about)_
 
-![Secured with Let's Encrypt](https://letsencrypt.org/images/le-logo-wide.png)
-
 _Hosting secured with [Let's Encrypt](https://letsencrypt.org/about/)_
 
-This is my personal landing page hosted on my Digital Ocean Droplet,
-at https://enpaul.net. Being a static site it should be hostable nearly anywhere, but I
-have personally verified that it works under **Nginx**, **Apache**, and **IIS 10**
+This is my personal landing page hosted with [Digital Ocean](https://www.digitalocean.com/)
+using [Nginx](https://nginx.org/en/) at https://enpaul.net. Being a static site it
+should be hostable nearly anywhere.
 
 The `_archive` directory has all the previous iterations of this website, dating back
 even before it was in source control. The `_archive` directory could be considered
