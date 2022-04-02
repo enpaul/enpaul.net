@@ -539,10 +539,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 #network .service-icon {
   float: left;
   background-color: #fff;
-  padding: 16px;
   border-radius: 50%;
   transition: 0.5s;
   border: 1px solid black;
+  width: 6rem;
+  height: 6rem;
+  padding-top: 1.6rem;
+  text-align: center;
 }
 
 #network .service-icon i {
@@ -550,16 +553,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 24px;
 }
 
-#network .service-item:hover .service-icon {
+#network a:hover .service-icon {
   border: 1px solid #003777;
   outline: 0;
   color: white;
   background-color: #003777;
 }
 
-#network .service-item:hover .service-icon i {
-  color: white;
-}
+#network a:hover .service-icon i { color: white; }
 
 #network .service-icon-no-link {
   float: left;
