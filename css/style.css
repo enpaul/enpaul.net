@@ -500,7 +500,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-title {
-  color: #bababa;
+  color: #fff;
   font-weight: 600;
   font-size: 20px;
 }
@@ -844,15 +844,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
 }
 
-#about-content {
-  background-color: rgba(17, 17, 17, 0.7);
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  border-radius: 1em;
-  color: #d3d3d3;
-}
+#about-content { text-shadow: 2px 2px 4px #000; }
+
+#about-content p { color: #fff; }
 
 /*--------------------------------------------------------------
 # Footer
