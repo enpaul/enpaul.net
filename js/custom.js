@@ -58,9 +58,6 @@ jQuery(document).ready(function( $ ) {
       $("#mobile-nav, #mobile-nav-toggle").hide();
   }
 
-  // Stick the header at top on scroll
-  $("#header").sticky({topSpacing:0, zIndex: '50'});
-
   // Smoth scroll on page hash links
   $('a[href*="#"]:not([href="#"])').on('click', function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
