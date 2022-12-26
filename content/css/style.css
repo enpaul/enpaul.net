@@ -499,18 +499,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 80px 0;
 }
 
-#about .about-title {
-  color: #fff;
-  font-weight: 600;
-  font-size: 20px;
+.about-text {
+  list-style-type: disclosure-closed;
+  font-size: 1.5em;
+  color: white;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
-#about .about-text {
-  line-height: 26px;
-}
-
-#about .about-text:last-child {
-  margin-bottom: 0;
+.about-text li { 
+  margin-bottom: 1.25em; 
+  margin-left: -1em;
 }
 
 #about .about-portrait {
