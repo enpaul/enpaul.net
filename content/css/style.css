@@ -949,3 +949,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-color:#003777;
   color:#fff;
 }
+
+.hb-mastodon, .hb-mastodon:after, .hb-mastodon:before {
+  background:#5b4adf;
+  border-color:#5b4adf;
+  color:#fff
+}
+
+.hb-mastodon-inv, .hb-mastodon-inv:after, .hb-mastodon-inv:before, .hb-mastodon:hover, .hb-mastodon:hover:after, .hb-mastodon:hover:before {
+  background:0 0;
+  border-color:#5b4adf;
+  color:#5b4adf;
+}
+
+.hb-mastodon-inv:hover, .hb-mastodon-inv:hover:after, .hb-mastodon-inv:hover:before {
+  background:#5b4adf;
+  border-color:#5b4adf;
+  color:#fff;
+}
