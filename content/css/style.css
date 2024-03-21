@@ -915,20 +915,20 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .hb-email, .hb-email:after, .hb-email:before {
-  background:#00af8c;
-  border-color:#00af8c;
+  background:#840010;
+  border-color:#840010;
   color:#fff;
 }
 
 .hb-email-inv, .hb-email-inv:after, .hb-email-inv:before, .hb-email:hover, .hb-email:hover:after, .hb-email:hover:before {
   background:0 0;
-  border-color:#00af8c;
-  color:#00af8c;
+  border-color:#840010;
+  color:#840010;
 }
 
 .hb-email-inv:hover, .hb-email-inv:hover:after, .hb-email-inv:hover:before {
-  background:#00af8c;
-  border-color:#00af8c;
+  background:#840010;
+  border-color:#840010;
   color:#fff
 }
 
