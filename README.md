@@ -3,8 +3,9 @@
 Personal landing page at https://enpaul.net
 
 ![Support the EFF](https://www.eff.org/files/eff-banner.png)
+![Support the FPF](https://freedom.press/documents/108/Banner_Color.svg)
 
-_Proud supporter of the [Electronic Frontier Foundation](https://www.eff.org/about)_
+_Proud supporter of the [Electronic Frontier Foundation](https://www.eff.org/about) and [Freedom of the Press Foundation](https://freedom.press)_
 
 _Hosting secured with [Let's Encrypt](https://letsencrypt.org/about/)_
 

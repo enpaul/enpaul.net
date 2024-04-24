@@ -967,3 +967,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-color:#5b4adf;
   color:#fff;
 }
+
+.support-banner {
+  background-color: white;
+  width: 100%;
+}
