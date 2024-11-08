@@ -968,6 +968,24 @@ body.mobile-nav-active #mobile-nav-toggle {
   color:#fff;
 }
 
+.hb-bluesky, .hb-bluesky:after, .hb-bluesky:before {
+  background:#0085ff;
+  border-color:#0085ff;
+  color:#fff
+}
+
+.hb-bluesky-inv, .hb-bluesky-inv:after, .hb-bluesky-inv:before, .hb-bluesky:hover, .hb-bluesky:hover:after, .hb-bluesky:hover:before {
+  background:0 0;
+  border-color:#0085ff;
+  color:#0085ff;
+}
+
+.hb-bluesky-inv:hover, .hb-bluesky-inv:hover:after, .hb-bluesky-inv:hover:before {
+  background:#0085ff;
+  border-color:#0085ff;
+  color:#fff;
+}
+
 .support-banner {
   background-color: white;
   width: 100%;
